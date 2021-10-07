@@ -362,6 +362,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 427583010896342513, guid: fc24ae0c41388b746861cd380d5973e1, type: 3}
+      propertyPath: m_Radius
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 427583010896342517, guid: fc24ae0c41388b746861cd380d5973e1, type: 3}
       propertyPath: m_Name
       value: Boulder
@@ -679,7 +683,7 @@ GameObject:
   - component: {fileID: 1507368882}
   - component: {fileID: 1507368881}
   - component: {fileID: 1507368883}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Tilemap1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2460,6 +2464,10 @@ PrefabInstance:
     - target: {fileID: 2007380121781006357, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
       propertyPath: m_Name
       value: character
+      objectReference: {fileID: 0}
+    - target: {fileID: 2007380121781006357, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4532179825954938587, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
       propertyPath: tilemap
