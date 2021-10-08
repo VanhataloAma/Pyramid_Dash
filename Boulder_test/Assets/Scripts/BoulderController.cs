@@ -28,8 +28,13 @@ public class BoulderController : MonoBehaviour
         hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector3.down), 1f, ~LayerMask.GetMask("Boulder"));
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down), Color.green, 2, false);
         if (hit.collider != null) {
-            fall_Timer = 0;
-            falling = false;
+            if (!(falling && hit.transform.tag == "Player")) {
+                fall_Timer = 0;
+                falling = false;
+
+            } else {
+                fall_Timer += Time.deltaTime;
+            }
             
         }  else {
             fall_Timer += Time.deltaTime;
@@ -39,6 +44,12 @@ public class BoulderController : MonoBehaviour
             falling = true;
             transform.position = nextPosition;
             fall_Timer = 0;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col) {
+        if (col.transform.tag == "Player") {
+            Destroy(col.gameObject);
         }
     }
 
