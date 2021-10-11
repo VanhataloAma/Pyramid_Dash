@@ -41,7 +41,7 @@ public class BoulderController : MonoBehaviour
             fall_Timer += Time.deltaTime;
         }
 
-        if (fall_Timer >= 1.0f) {
+        if (fall_Timer >= 0.4f) {
             falling = true;
             transform.position = nextPosition;
             fall_Timer = 0;
