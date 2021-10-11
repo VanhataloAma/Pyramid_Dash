@@ -50,7 +50,7 @@ public class BoulderController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col) {
         if (col.transform.tag == "Player") {
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("GameOver");
         }
     }
 
