@@ -2363,5 +2363,33 @@ PrefabInstance:
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 1507368882}
+    - target: {fileID: 7679671949442012761, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+      propertyPath: m_Size.y
+      value: 1.044
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+--- !u!1 &4273797245760217249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2007380121781006357, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+  m_PrefabInstance: {fileID: 4273797245760217248}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &4273797245760217250
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4273797245760217249}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1af7796d6fa24534198daff2e8d86169, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
