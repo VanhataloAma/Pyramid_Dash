@@ -49,9 +49,13 @@ public class BoulderController : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col) {
-        if (col.transform.tag == "Player") {
+        if (col.transform.tag == "Player" && falling) {
             SceneManager.LoadScene("GameOver");
         }
+    }
+
+    void Move(Vector3 targetPosition) {
+        transform.position = targetPosition;
     }
 
 }

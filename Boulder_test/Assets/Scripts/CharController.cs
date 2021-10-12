@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class CharController : MonoBehaviour
 {
     public Tilemap tilemap;
+    AudioSource audioData;
 
     Vector3 nextPosition;
 
@@ -14,6 +15,7 @@ public class CharController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+     audioData = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,30 +25,36 @@ public class CharController : MonoBehaviour
 
         if (Input.GetKeyDown("s")) {
             nextPosition.y -= 1f;
-            Move(nextPosition);
+            Move(nextPosition, false);
             
         } else if (Input.GetKeyDown("w")) {
             nextPosition.y += 1f;
-            Move(nextPosition);
+            Move(nextPosition, false);
 
         } else if (Input.GetKeyDown("a")) {
             nextPosition.x -= 1f;
-            Move(nextPosition);
+            Move(nextPosition, true);
             
         } else if (Input.GetKeyDown("d")) {
             nextPosition.x += 1f;
-            Move(nextPosition);  
+            Move(nextPosition, true);  
         }
         
-        tilemap.SetTile(Vector3Int.FloorToInt(transform.position), null);
+        
     }
 
-    void Move(Vector3 targetPosition) 
+    void Move(Vector3 targetPosition, bool horizontal) 
     {
-        hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, 1f, LayerMask.GetMask("Block"));
+        hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, 1f, ~LayerMask.GetMask("Player"));
         Debug.DrawRay(transform.position, targetPosition - transform.position, Color.green, 2, false);
         if (hit.collider != null) {
             Debug.Log(hit.transform.tag);
+            if (hit.transform.tag == "Tilemap") {
+                tilemap.SetTile(Vector3Int.FloorToInt(targetPosition), null);
+                transform.position = targetPosition;
+
+            } else if (hit.transform.tag == "Boulder" && horizontal) {
+            }
         } else {
             transform.position = targetPosition;
         }
