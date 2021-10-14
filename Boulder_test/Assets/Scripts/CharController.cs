@@ -9,9 +9,11 @@ public class CharController : MonoBehaviour
     AudioSource audioData;
 
     Vector3 nextPosition;
-
     RaycastHit2D hit;
-    
+
+    Vector3 pushPosition;
+    RaycastHit2D push_Hit;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,6 +56,14 @@ public class CharController : MonoBehaviour
                 transform.position = targetPosition;
 
             } else if (hit.transform.tag == "Boulder" && horizontal) {
+                pushPosition = hit.transform.position - transform.position;
+                Debug.Log(pushPosition);
+                push_Hit = Physics2D.Raycast(hit.transform.position, pushPosition, 1f, ~LayerMask.GetMask("Boulder"));
+                Debug.DrawRay(hit.transform.position, pushPosition, Color.green, 2, false);
+                if (push_Hit.collider == null) {
+                    hit.transform.position += pushPosition;
+                    transform.position = targetPosition;
+                }
             }
         } else {
             transform.position = targetPosition;
