@@ -5,13 +5,17 @@ using UnityEngine.Tilemaps;
 
 public class CharController : MonoBehaviour
 {
-    public Tilemap tilemap;
+    [SerializeField]
+    Tilemap tilemap;
+
     AudioSource audioData;
 
     Vector3 nextPosition;
+
     RaycastHit2D hit;
 
     Vector3 pushPosition;
+
     RaycastHit2D push_Hit;
 
     // Start is called before the first frame update
@@ -64,12 +68,15 @@ public class CharController : MonoBehaviour
                     hit.transform.position += pushPosition;
                     transform.position = targetPosition;
                 }
+
+            } else if (hit.transform.tag == "Gem") {
+                Destroy(hit.transform.gameObject);
+                transform.position = targetPosition;
             }
         } else {
             transform.position = targetPosition;
         }
     }
     void OnCollisionEnter2D(Collision2D col) {
-        //Debug.Log(col.collider);
     }
 }
