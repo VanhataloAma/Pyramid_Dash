@@ -18,10 +18,13 @@ public class CharController : MonoBehaviour
 
     RaycastHit2D push_Hit;
 
+    Collider2D collider2d;
+
     // Start is called before the first frame update
     void Start()
     {
      audioData = GetComponent<AudioSource>();
+     collider2d = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -45,7 +48,6 @@ public class CharController : MonoBehaviour
             nextPosition.x += 1f;
             Move(nextPosition, true);  
         }
-        
         
     }
 
@@ -72,11 +74,15 @@ public class CharController : MonoBehaviour
             } else if (hit.transform.tag == "Gem") {
                 Destroy(hit.transform.gameObject);
                 transform.position = targetPosition;
+
+            } else if (hit.transform.tag == "Portal") {
+                transform.position = targetPosition;
             }
         } else {
             transform.position = targetPosition;
         }
     }
     void OnCollisionEnter2D(Collision2D col) {
+        Debug.Log("jeeee");
     }
 }

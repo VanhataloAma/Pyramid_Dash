@@ -8,6 +8,7 @@ TagManager:
   - Tilemap
   - Boulder
   - Gem
+  - Portal
   layers:
   - Default
   - TransparentFX
