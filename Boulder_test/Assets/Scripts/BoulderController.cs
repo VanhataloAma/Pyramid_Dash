@@ -10,6 +10,7 @@ public class BoulderController : MonoBehaviour
 
     float fall_Timer;
     bool falling;
+    bool onPlayer = false;
 
     // Start is called before the first frame update
     void Start()
@@ -29,12 +30,20 @@ public class BoulderController : MonoBehaviour
         hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector3.down), 1f, ~LayerMask.GetMask("Boulder"));
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down), Color.green, 2, false);
         if (hit.collider != null) {
-            if (!(falling && hit.transform.tag == "Player")) {
-                fall_Timer = 0;
-                falling = false;
+            if (hit.transform.tag == "Player") {
+                if (!falling) {
+                    onPlayer = true;
+                    fall_Timer = 0.39f;
+                } else {
+                    if (onPlayer) {
+                        fall_Timer = 0.4f;
+                        onPlayer = false;
+                    }
+                    fall_Timer += Time.deltaTime;
+                }
 
             } else {
-                fall_Timer += Time.deltaTime;
+                falling = false;
             }
             
         }  else {
