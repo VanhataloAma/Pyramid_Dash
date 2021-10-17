@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class BoulderController : MonoBehaviour
 {
     RaycastHit2D hit;
+
     Vector3 nextPosition;
+    Vector3 raycast_Start;
 
     float fall_Timer;
     bool falling;
@@ -27,8 +29,10 @@ public class BoulderController : MonoBehaviour
     void Move() {
         nextPosition = transform.position;
         nextPosition.y -= 1f;
-        hit = Physics2D.Raycast(transform.position, transform.TransformDirection(Vector3.down), 1f, ~LayerMask.GetMask("Boulder"));
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down), Color.green, 2, false);
+        raycast_Start = transform.position;
+        raycast_Start.y -= 0.3f;
+        hit = Physics2D.Raycast(raycast_Start, transform.TransformDirection(Vector3.down), 1f);
+        Debug.DrawRay(raycast_Start, transform.TransformDirection(Vector3.down), Color.green, 2, false);
         if (hit.collider != null) {
             if (hit.transform.tag == "Player") {
                 if (!falling) {
@@ -45,6 +49,11 @@ public class BoulderController : MonoBehaviour
             } else {
                 falling = false;
             }
+
+            if (hit.transform.tag == "Boulder") {
+                fall_Timer = 0f;
+                transform.position = Collapse();
+            }
             
         }  else {
             fall_Timer += Time.deltaTime;
@@ -57,14 +66,33 @@ public class BoulderController : MonoBehaviour
         }
     }
 
+    Vector3 Collapse() {
+        Vector3 collapse_Position = transform.position;
+        hit = Physics2D.Raycast(raycast_Start, new Vector3(-1, -1, 0), 1f);
+        Debug.DrawRay(raycast_Start, new Vector3(-1, -1, 0), Color.red, 10, false);
+        if (hit.collider == null) {
+            hit = Physics2D.Raycast(raycast_Start, new Vector3(-1, 0, 0), 1f);
+            Debug.DrawRay(raycast_Start, new Vector3(-1, 0, 0), Color.magenta, 10, false);
+            if (hit.collider == null) {
+                collapse_Position += new Vector3(-1, 0, 0);
+            }
+        } else {
+            hit = Physics2D.Raycast(raycast_Start, new Vector3(1, 0, 0), 1f);
+            Debug.DrawRay(raycast_Start, new Vector3(1, 0, 0), Color.yellow, 10, false);
+            if (hit.collider == null) {
+                hit = Physics2D.Raycast(raycast_Start, new Vector3(1, -1, 0), 1f);
+                if (hit.collider == null) {
+                    collapse_Position += new Vector3(1, -1, 0);
+                }
+            }
+        }
+        return collapse_Position;
+    }
+
     void OnCollisionEnter2D(Collision2D col) {
         if (col.transform.tag == "Player" && falling) {
             SceneManager.LoadScene("GameOver");
         }
-    }
-
-    void Move(Vector3 targetPosition) {
-        transform.position = targetPosition;
     }
 
 }
