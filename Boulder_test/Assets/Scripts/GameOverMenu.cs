@@ -3,24 +3,27 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameOverMenu : MonoBehaviour
+namespace GA.Pyramid_dash
 {
-
-    private float timer = 5f;
-
-    void Start ()
+    public class GameOverMenu : MonoBehaviour
     {
-        
-    }
 
-    void Update()
-    {
-        timer -= Time.deltaTime;
-        if (timer <= 0)
+        private float timer = 5f;
+
+        void Start ()
         {
-            SceneManager.LoadScene("Menu");
-            Debug.Log("Times up");
+            
         }
-    }
 
+        void Update()
+        {
+            timer -= Time.deltaTime;
+            if (timer <= 0)
+            {
+                SceneManager.LoadScene("Menu");
+                Debug.Log("Times up");
+            }
+        }
+
+    }
 }
