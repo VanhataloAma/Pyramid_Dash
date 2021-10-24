@@ -33,7 +33,7 @@ namespace GA.Pyramid_dash
         void Update()
         {
             gems = GameObject.FindGameObjectsWithTag("Gem");
-            if (gems.Length == activation_Threshold) {
+            if (gems.Length <= activation_Threshold) {
                 active = true;
             }
             if (portalCollider.bounds.Intersects(playerCollider.bounds) && active) {
