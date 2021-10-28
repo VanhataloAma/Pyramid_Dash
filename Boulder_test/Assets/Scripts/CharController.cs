@@ -10,9 +10,6 @@ namespace GA.Pyramid_dash
         [SerializeField]
         Tilemap tilemap;
 
-        public BoulderController boulderPrefab;
-        BoulderController boulder;
-
         AudioSource audioData;
 
         Vector3 nextPosition;

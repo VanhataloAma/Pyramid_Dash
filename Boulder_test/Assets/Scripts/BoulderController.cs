@@ -9,30 +9,36 @@ namespace GA.Pyramid_dash
     {
         RaycastHit2D hit;
 
+        [SerializeField]
+        GameObject MoveCheck_Prefab;
+        GameObject MoveCheck_Instance;
+
         Vector3 nextPosition;
+        Vector3 collapsePosition;
+
         Vector3 raycast_Start_Down;
         Vector3 raycast_Start_Left;
         Vector3 raycast_Start_Right;
 
         float fall_Timer;
         bool falling;
-        bool onPlayer = false;
         
         // Start is called before the first frame update
         void Start()
         {
-
+            nextPosition = transform.position - new Vector3(0, 1, 0);
         }
 
         // Update is called once per frame
-        void Update()
+        void FixedUpdate()
         {
             Move();
         }
 
         void Move() {
-            nextPosition = transform.position;
-            nextPosition.y -= 1f;
+            Destroy(MoveCheck_Instance);
+            
+            nextPosition = transform.position - new Vector3(0, 1, 0);
 
             raycast_Start_Down = transform.position;
             raycast_Start_Down.y -= 0.35f;
@@ -43,18 +49,13 @@ namespace GA.Pyramid_dash
             raycast_Start_Right = transform.position;
             raycast_Start_Right.x += 0.35f;
 
-            hit = Physics2D.Raycast(raycast_Start_Down, transform.TransformDirection(Vector3.down), 0.6f);
-            Debug.DrawRay(raycast_Start_Down, transform.TransformDirection(Vector3.down), Color.green, 2, false);
+            hit = Physics2D.Raycast(raycast_Start_Down, nextPosition - transform.position, 0.6f);
+            Debug.DrawRay(raycast_Start_Down, nextPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
                 if (hit.transform.tag == "Player") {
                     if (!falling) {
-                        onPlayer = true;
                         fall_Timer = 0.39f;
                     } else {
-                        if (onPlayer) {
-                            fall_Timer = 0.4f;
-                            onPlayer = false;
-                        }
                         fall_Timer += Time.deltaTime;
                     }
 
@@ -63,8 +64,11 @@ namespace GA.Pyramid_dash
                 }
 
                 if (hit.transform.tag == "Boulder" && !falling) {
-                    fall_Timer = 0f;
-                    transform.position = Collapse();
+                    collapsePosition = Collapse();
+                    if (collapsePosition != transform.position) {
+                        transform.position = Collapse();
+                        MoveCheck_Instance = Instantiate(MoveCheck_Prefab, transform.position, Quaternion.identity);
+                    }
                 }
                 
             }  else {
@@ -81,19 +85,19 @@ namespace GA.Pyramid_dash
         Vector3 Collapse() {
             Vector3 collapse_Position = transform.position;
             hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(-1, -1, 0), 1f);
-            Debug.DrawRay(raycast_Start_Down, new Vector3(-1, -1, 0), Color.red, 10, false);
+            Debug.DrawRay(raycast_Start_Down, new Vector3(-1, -1, 0), Color.red, 2, false);
             if (hit.collider == null) {
                 hit = Physics2D.Raycast(raycast_Start_Left, new Vector3(-1, 0, 0), 1f);
-                Debug.DrawRay(raycast_Start_Left, new Vector3(-1, 0, 0), Color.magenta, 10, false);
+                Debug.DrawRay(raycast_Start_Left, new Vector3(-1, 0, 0), Color.magenta, 2, false);
                 if (hit.collider == null) {
                     collapse_Position += new Vector3(-1, 0, 0);
                 }
             } else {
                 hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(1, -1, 0), 1f);
-                Debug.DrawRay(raycast_Start_Down, new Vector3(1, -1, 0), Color.yellow, 10, false);
+                Debug.DrawRay(raycast_Start_Down, new Vector3(1, -1, 0), Color.yellow, 2, false);
                 if (hit.collider == null) {
                     hit = Physics2D.Raycast(raycast_Start_Right, new Vector3(1, 0, 0), 1f);
-                    Debug.DrawRay(raycast_Start_Right, new Vector3(1, 0, 0), Color.cyan, 10, false);
+                    Debug.DrawRay(raycast_Start_Right, new Vector3(1, 0, 0), Color.cyan, 2, false);
                     if (hit.collider == null) {
                         collapse_Position += new Vector3(1, 0, 0);
                     }
