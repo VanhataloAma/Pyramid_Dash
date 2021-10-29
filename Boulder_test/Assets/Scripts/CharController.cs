@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 
 namespace GA.Pyramid_dash {
     public class CharController : MonoBehaviour {
+
         [SerializeField]
         Tilemap tilemap;
 
@@ -18,34 +19,58 @@ namespace GA.Pyramid_dash {
 
         RaycastHit2D push_Hit;
 
-        Collider2D collider2d;
+        float move_Timer;
+
+        [SerializeField]
+        float move_Speed = 0.2f;
+
+        bool move_Horizontal;
+
+        float vertical_Axis;
+        float horizontal_Axis;
 
         // Start is called before the first frame update
-        void Start()
-        {
-        audioData = GetComponent<AudioSource>();
-        collider2d = GetComponent<Collider2D>();
+        void Start() {
+            audioData = GetComponent<AudioSource>();
         }
 
         // Update is called once per frame
         void Update() {
+            vertical_Axis = Input.GetAxis("Vertical");
+            horizontal_Axis = Input.GetAxis("Horizontal");
+
             nextPosition = transform.position;
 
-            if (Input.GetKeyDown("s")) {
+            if (Input.GetKey("s")) {
                 nextPosition.y -= 1f;
-                Move(nextPosition, false);
+                move_Horizontal = false;
+                move_Timer += Time.deltaTime;
                 
-            } else if (Input.GetKeyDown("w")) {
+            } else if (Input.GetKey("w")) {
                 nextPosition.y += 1f;
-                Move(nextPosition, false);
+                move_Horizontal = false;
+                move_Timer += Time.deltaTime;
+                //Move(nextPosition, false);
 
-            } else if (Input.GetKeyDown("a")) {
+            } else if (Input.GetKey("a")) {
                 nextPosition.x -= 1f;
-                Move(nextPosition, true);
+                move_Horizontal = true;
+                move_Timer += Time.deltaTime;
+                //Move(nextPosition, true);
                 
-            } else if (Input.GetKeyDown("d")) {
+            } else if (Input.GetKey("d")) {
                 nextPosition.x += 1f;
-                Move(nextPosition, true);  
+                move_Horizontal = true;
+                move_Timer += Time.deltaTime;
+                //Move(nextPosition, true);  
+
+            } else {
+                move_Timer = 0;
+            }
+
+            if (move_Timer >= move_Speed) {
+                Move(nextPosition, move_Horizontal);
+                move_Timer = 0;
             }
             
         }
