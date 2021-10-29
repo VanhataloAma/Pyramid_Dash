@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
-namespace GA.Pyramid_dash
-{
-    public class CharController : MonoBehaviour
-    {
+namespace GA.Pyramid_dash {
+    public class CharController : MonoBehaviour {
         [SerializeField]
         Tilemap tilemap;
 
@@ -30,8 +28,7 @@ namespace GA.Pyramid_dash
         }
 
         // Update is called once per frame
-        void Update()
-        {
+        void Update() {
             nextPosition = transform.position;
 
             if (Input.GetKeyDown("s")) {
@@ -53,8 +50,7 @@ namespace GA.Pyramid_dash
             
         }
 
-        void Move(Vector3 targetPosition, bool horizontal) 
-        {
+        void Move(Vector3 targetPosition, bool horizontal) {
             hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, 1f, ~LayerMask.GetMask("Player"));
             Debug.DrawRay(transform.position, targetPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {

@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace GA.Pyramid_dash
-{
-    public class BoulderController : MonoBehaviour
-    {
+namespace GA.Pyramid_dash {
+    public class BoulderController : MonoBehaviour {
         RaycastHit2D hit;
 
         [SerializeField]
@@ -24,14 +22,12 @@ namespace GA.Pyramid_dash
         bool falling;
         
         // Start is called before the first frame update
-        void Start()
-        {
+        void Start() {
             nextPosition = transform.position - new Vector3(0, 1, 0);
         }
 
         // Update is called once per frame
-        void FixedUpdate()
-        {
+        void FixedUpdate() {
             Move();
         }
 
@@ -84,6 +80,7 @@ namespace GA.Pyramid_dash
 
         Vector3 Collapse() {
             Vector3 collapse_Position = transform.position;
+            bool changed = false;
             hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(-1, -1, 0), 1f);
             Debug.DrawRay(raycast_Start_Down, new Vector3(-1, -1, 0), Color.red, 2, false);
             if (hit.collider == null) {
@@ -91,8 +88,11 @@ namespace GA.Pyramid_dash
                 Debug.DrawRay(raycast_Start_Left, new Vector3(-1, 0, 0), Color.magenta, 2, false);
                 if (hit.collider == null) {
                     collapse_Position += new Vector3(-1, 0, 0);
+                    changed = true;
                 }
-            } else {
+            }
+
+            if (!changed) {
                 hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(1, -1, 0), 1f);
                 Debug.DrawRay(raycast_Start_Down, new Vector3(1, -1, 0), Color.yellow, 2, false);
                 if (hit.collider == null) {
