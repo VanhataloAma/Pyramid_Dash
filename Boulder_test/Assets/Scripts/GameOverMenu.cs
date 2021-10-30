@@ -8,7 +8,7 @@ namespace GA.Pyramid_dash
     public class GameOverMenu : MonoBehaviour
     {
 
-        private float timer = 5f;
+        private float timer = 2.5f;
 
         void Start ()
         {
