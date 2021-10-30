@@ -22,7 +22,7 @@ namespace GA.Pyramid_dash {
         float move_Timer;
 
         [SerializeField]
-        float move_Speed = 0.2f;
+        float move_Speed = 0.25f;
 
         bool move_Horizontal;
 
@@ -65,10 +65,10 @@ namespace GA.Pyramid_dash {
                 //Move(nextPosition, true);  
 
             } else {
-                move_Timer = 0;
+                move_Timer = 0.2f;
             }
 
-            if (move_Timer >= move_Speed) {
+            if (move_Timer >= move_Speed && nextPosition != transform.position) {
                 Move(nextPosition, move_Horizontal);
                 move_Timer = 0;
             }
@@ -76,10 +76,10 @@ namespace GA.Pyramid_dash {
         }
 
         void Move(Vector3 targetPosition, bool horizontal) {
-            hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, 1f, ~LayerMask.GetMask("Player"));
+            hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, 1f, ~LayerMask.GetMask("Player", "Ignore Raycast"));
             Debug.DrawRay(transform.position, targetPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
-                //Debug.Log(hit.transform.tag);
+                Debug.Log(hit.collider);
                 if (hit.transform.tag == "Tilemap") {
                     tilemap.SetTile(Vector3Int.FloorToInt(targetPosition), null);
                     transform.position = targetPosition;

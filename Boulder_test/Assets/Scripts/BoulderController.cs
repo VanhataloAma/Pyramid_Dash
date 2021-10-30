@@ -50,7 +50,7 @@ namespace GA.Pyramid_dash {
             if (hit.collider != null) {
                 if (hit.transform.tag == "Player") {
                     if (!falling) {
-                        fall_Timer = 0.39f;
+                        fall_Timer = 0.2f;
                     } else {
                         fall_Timer += Time.deltaTime;
                     }
@@ -62,8 +62,8 @@ namespace GA.Pyramid_dash {
                 if (hit.transform.tag == "Boulder" && !falling) {
                     collapsePosition = Collapse();
                     if (collapsePosition != transform.position) {
-                        transform.position = Collapse();
-                        MoveCheck_Instance = Instantiate(MoveCheck_Prefab, transform.position, Quaternion.identity);
+                        nextPosition = collapsePosition;
+                        fall_Timer += Time.deltaTime;
                     }
                 }
                 
@@ -71,9 +71,10 @@ namespace GA.Pyramid_dash {
                 fall_Timer += Time.deltaTime;
             }
 
-            if (fall_Timer >= 0.4f) {
+            if (fall_Timer >= 0.25f) {
                 falling = true;
                 transform.position = nextPosition;
+                MoveCheck_Instance = Instantiate(MoveCheck_Prefab, transform.position, Quaternion.identity);
                 fall_Timer = 0;
             }
         }
@@ -113,7 +114,7 @@ namespace GA.Pyramid_dash {
         }
 
         public bool Pushed(Vector3 pushDirection) {
-            Debug.Log(pushDirection);
+            //Debug.Log(pushDirection);
             RaycastHit2D push_Hit = Physics2D.Raycast(transform.position + pushDirection, pushDirection * -1, 0.5f);
             Debug.DrawRay(transform.position + pushDirection,pushDirection * -1, Color.blue, 10, false);
             if (push_Hit.collider == null) {
