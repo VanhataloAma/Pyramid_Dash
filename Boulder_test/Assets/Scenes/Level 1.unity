@@ -14481,6 +14481,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2096743949, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
+      propertyPath: m_BoundingShape2D
+      value: 
+      objectReference: {fileID: 1232837766}
     - target: {fileID: 6146051850800918707, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -14529,14 +14533,6 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1424041967}
-    - target: {fileID: 6146051850800918708, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6146051850800918708, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
-      propertyPath: m_Lens.OrthographicSize
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6146051850800918709, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
       propertyPath: m_Name
       value: CM vcam1
@@ -14635,28 +14631,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2096743948 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6146051850800918709, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
-  m_PrefabInstance: {fileID: 2051535958}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2096743949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096743948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2fba25a5cd15594e8f050a11e386c80, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ConfineMode: 0
-  m_BoundingVolume: {fileID: 0}
-  m_BoundingShape2D: {fileID: 1232837766}
-  m_ConfineScreenEdges: 1
-  m_Damping: 0
 --- !u!1001 &2098047579
 PrefabInstance:
   m_ObjectHideFlags: 0
