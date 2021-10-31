@@ -23,10 +23,16 @@ namespace GA.Pyramid_dash
         [SerializeField]
         Collider2D playerCollider;
 
+        [SerializeField]
+        Sprite activatedSprite;
+
+        SpriteRenderer srenderer;
+
         // Start is called before the first frame update
         void Start()
         {
             portalCollider = GetComponent<Collider2D>();
+            srenderer = GetComponent<SpriteRenderer>();
         }
 
         // Update is called once per frame
@@ -35,6 +41,7 @@ namespace GA.Pyramid_dash
             gems = GameObject.FindGameObjectsWithTag("Gem");
             if (gems.Length <= activation_Threshold) {
                 active = true;
+                srenderer.sprite = activatedSprite;
             }
             if (portalCollider.bounds.Intersects(playerCollider.bounds) && active) {
                 SceneManager.LoadScene(next_Level);

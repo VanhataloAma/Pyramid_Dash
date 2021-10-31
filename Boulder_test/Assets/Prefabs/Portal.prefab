@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5805282690857221507}
   - component: {fileID: 5805282690857221504}
   m_Layer: 0
-  m_Name: Portal_Open_ver2
+  m_Name: Portal
   m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 5bc0853e900c60c4e8ba341230872ad1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 534843831b736c94d9ea11e63da925ca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   activation_Threshold: 1
   next_Level: Level 1
   playerCollider: {fileID: 0}
+  activatedSprite: {fileID: 21300000, guid: e6fe09359da75bc4e92d8da054b01516, type: 3}
 --- !u!61 &5805282690857221504
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -117,7 +118,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.25}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 1.25, y: 1.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
