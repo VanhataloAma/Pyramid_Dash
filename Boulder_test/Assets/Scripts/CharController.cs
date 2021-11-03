@@ -10,6 +10,7 @@ namespace GA.Pyramid_dash {
         Tilemap tilemap;
 
         AudioSource audioData;
+        Animator animator;
 
         Vector3 nextPosition;
 
@@ -26,18 +27,14 @@ namespace GA.Pyramid_dash {
 
         bool move_Horizontal;
 
-        float vertical_Axis;
-        float horizontal_Axis;
-
         // Start is called before the first frame update
         void Start() {
             audioData = GetComponent<AudioSource>();
+            animator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
         void Update() {
-            vertical_Axis = Input.GetAxis("Vertical");
-            horizontal_Axis = Input.GetAxis("Horizontal");
 
             nextPosition = transform.position;
 
@@ -45,24 +42,29 @@ namespace GA.Pyramid_dash {
                 nextPosition.y -= 1f;
                 move_Horizontal = false;
                 move_Timer += Time.deltaTime;
+                animator.SetFloat("Move X", 0);
+                animator.SetFloat("Move Y", -0.5f);
                 
             } else if (Input.GetKey("w")) {
                 nextPosition.y += 1f;
                 move_Horizontal = false;
                 move_Timer += Time.deltaTime;
-                //Move(nextPosition, false);
+                animator.SetFloat("Move X", 0);
+                animator.SetFloat("Move Y", 0.5f);
 
             } else if (Input.GetKey("a")) {
                 nextPosition.x -= 1f;
                 move_Horizontal = true;
                 move_Timer += Time.deltaTime;
-                //Move(nextPosition, true);
+                animator.SetFloat("Move Y", 0);
+                animator.SetFloat("Move X", -0.5f);
                 
             } else if (Input.GetKey("d")) {
                 nextPosition.x += 1f;
                 move_Horizontal = true;
                 move_Timer += Time.deltaTime;
-                //Move(nextPosition, true);  
+                animator.SetFloat("Move Y", 0);
+                animator.SetFloat("Move X", 0.5f); 
 
             } else {
                 move_Timer = 0.2f;
