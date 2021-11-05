@@ -1429,6 +1429,10 @@ PrefabInstance:
       propertyPath: boulderPrefab
       value: 
       objectReference: {fileID: 1022465711, guid: fc24ae0c41388b746861cd380d5973e1, type: 3}
+    - target: {fileID: 7679671949442012761, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
 --- !u!1001 &387559939
@@ -2384,11 +2388,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5805282690857221506, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.5323361
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5805282690857221506, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5130954
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5805282690857221506, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: m_LocalPosition.z
