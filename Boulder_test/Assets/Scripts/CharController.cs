@@ -33,8 +33,7 @@ namespace GA.Pyramid_dash {
             animator = GetComponent<Animator>();
         }
 
-        // Update is called once per frame
-        void Update() {
+        void FixedUpdate() {
 
             nextPosition = transform.position;
 
