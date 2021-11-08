@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 427583010896342516}
   - component: {fileID: 427583010896342513}
   - component: {fileID: 1022465711}
+  - component: {fileID: 2612411970903481230}
   m_Layer: 8
   m_Name: Boulder
   m_TagString: Boulder
@@ -135,3 +136,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MoveCheck_Prefab: {fileID: 4297866987514812840, guid: ec64818e187a8a74481626ce4e249fb0, type: 3}
+--- !u!95 &2612411970903481230
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427583010896342517}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5e228d6e82bdc574fb4542beaf3ebe9b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

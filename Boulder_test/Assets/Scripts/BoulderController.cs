@@ -20,10 +20,13 @@ namespace GA.Pyramid_dash {
 
         float fall_Timer;
         bool falling;
+
+        Animator boulder_Animator;
         
         // Start is called before the first frame update
         void Start() {
             nextPosition = transform.position - new Vector3(0, 1, 0);
+            boulder_Animator = GetComponent<Animator>();
         }
 
         // Update is called once per frame
@@ -61,10 +64,14 @@ namespace GA.Pyramid_dash {
 
                 if (hit.transform.tag == "Boulder" && !falling) {
                     collapsePosition = Collapse();
+                    boulder_Animator.SetBool("Collapsing", true);
                     if (collapsePosition != transform.position) {
+                        boulder_Animator.SetBool("Collapsing", false);
                         nextPosition = collapsePosition;
                         fall_Timer += Time.deltaTime;
                     }
+                } else {
+                    boulder_Animator.SetBool("Collapsing", false);
                 }
                 
             }  else {
@@ -76,6 +83,7 @@ namespace GA.Pyramid_dash {
                 transform.position = nextPosition;
                 MoveCheck_Instance = Instantiate(MoveCheck_Prefab, transform.position, Quaternion.identity);
                 fall_Timer = 0;
+                
             }
         }
 
