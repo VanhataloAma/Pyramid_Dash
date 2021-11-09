@@ -19,5 +19,9 @@ namespace GA.Pyramid_dash
             Application.Quit();
         }
 
+        public void LevelSelect(string level_Name) {
+            SceneManager.LoadScene(level_Name);
+        }
+
     }
 }
