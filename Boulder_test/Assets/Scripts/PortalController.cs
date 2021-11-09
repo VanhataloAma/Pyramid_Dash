@@ -47,5 +47,9 @@ namespace GA.Pyramid_dash
                 SceneManager.LoadScene(next_Level);
             }
         }
+
+        public bool IsActive() {
+            return active;
+        }
     }
 }

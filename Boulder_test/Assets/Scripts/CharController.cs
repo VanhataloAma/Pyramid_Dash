@@ -95,7 +95,9 @@ namespace GA.Pyramid_dash {
                     transform.position = targetPosition;
 
                 } else if (hit.transform.tag == "Portal") {
-                    transform.position = targetPosition;
+                    if (hit.collider.gameObject.GetComponent<PortalController>().IsActive()) {
+                        transform.position = targetPosition;
+                    }
                 }
             } else {
                 transform.position = targetPosition;

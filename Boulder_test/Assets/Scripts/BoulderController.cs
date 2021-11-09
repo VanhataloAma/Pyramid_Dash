@@ -22,11 +22,14 @@ namespace GA.Pyramid_dash {
         bool falling;
 
         Animator boulder_Animator;
+        float boulder_Animation_Timer;
+        float boulder_Animation_Interval;
         
         // Start is called before the first frame update
         void Start() {
             nextPosition = transform.position - new Vector3(0, 1, 0);
             boulder_Animator = GetComponent<Animator>();
+            boulder_Animation_Interval = 2f + Random.Range(0f, 2f);
         }
 
         // Update is called once per frame
