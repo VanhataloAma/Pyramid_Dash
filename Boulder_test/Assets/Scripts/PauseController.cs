@@ -12,7 +12,7 @@ namespace GA.Pyramid_dash {
         }
 
         public void RestartLevel() {
-            SceneManager.LoadScene(SceneManager.GetSceneAt(0).name);
+            SceneManager.LoadSceneAsync(SceneManager.GetSceneAt(0).name);
         }
     }
 

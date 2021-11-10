@@ -11,8 +11,9 @@ namespace GA.Pyramid_dash {
         private bool paused;
 
         // Start is called before the first frame update
-        void Awake() {
+        void Start() {
             Time.timeScale = 1f;
+            Time.fixedDeltaTime = 0.02f;
             this.fixedDeltaTime = Time.fixedDeltaTime;
             paused = false;
             Debug.Log(SceneManager.GetActiveScene().rootCount);
@@ -23,6 +24,7 @@ namespace GA.Pyramid_dash {
             if (Input.GetKeyDown(KeyCode.Escape)) {
                 TogglePause();
             }
+            Debug.Log(Time.fixedDeltaTime);
         }
 
         void TogglePause() {
