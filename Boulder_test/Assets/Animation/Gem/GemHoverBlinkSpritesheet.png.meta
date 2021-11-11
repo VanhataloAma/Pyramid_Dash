@@ -1,0 +1,1908 @@
+fileFormatVersion: 2
+guid: 6e6dc8a1f33d19f489999ff01d0f2cda
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5122196918258887276
+    second: GemHoverBlinkSpritesheet_0
+  - first:
+      213: -6600655813456358045
+    second: GemHoverBlinkSpritesheet_1
+  - first:
+      213: 5728272944528269357
+    second: GemHoverBlinkSpritesheet_2
+  - first:
+      213: -7579214978873010882
+    second: GemHoverBlinkSpritesheet_3
+  - first:
+      213: -7110993495802555943
+    second: GemHoverBlinkSpritesheet_4
+  - first:
+      213: -4307588515709550030
+    second: GemHoverBlinkSpritesheet_5
+  - first:
+      213: -3385970061636197059
+    second: GemHoverBlinkSpritesheet_6
+  - first:
+      213: 43284437183104036
+    second: GemHoverBlinkSpritesheet_7
+  - first:
+      213: -134706033438024490
+    second: GemHoverBlinkSpritesheet_8
+  - first:
+      213: -5502685493612642139
+    second: GemHoverBlinkSpritesheet_9
+  - first:
+      213: 8486277000734941385
+    second: GemHoverBlinkSpritesheet_10
+  - first:
+      213: 5999522111128839660
+    second: GemHoverBlinkSpritesheet_11
+  - first:
+      213: 7225890489811623475
+    second: GemHoverBlinkSpritesheet_12
+  - first:
+      213: 7902763997895792823
+    second: GemHoverBlinkSpritesheet_13
+  - first:
+      213: -4221814794315509931
+    second: GemHoverBlinkSpritesheet_14
+  - first:
+      213: -4772286945377275745
+    second: GemHoverBlinkSpritesheet_15
+  - first:
+      213: -2495710784656992117
+    second: GemHoverBlinkSpritesheet_16
+  - first:
+      213: 3119796741102670130
+    second: GemHoverBlinkSpritesheet_17
+  - first:
+      213: 3980135508239772064
+    second: GemHoverBlinkSpritesheet_18
+  - first:
+      213: -1932195143994852163
+    second: GemHoverBlinkSpritesheet_19
+  - first:
+      213: -4267192895101970278
+    second: GemHoverBlinkSpritesheet_20
+  - first:
+      213: -9122075448667939602
+    second: GemHoverBlinkSpritesheet_21
+  - first:
+      213: -4676718220452530548
+    second: GemHoverBlinkSpritesheet_22
+  - first:
+      213: 979171749202213812
+    second: GemHoverBlinkSpritesheet_23
+  - first:
+      213: 894298031381538846
+    second: GemHoverBlinkSpritesheet_24
+  - first:
+      213: 1142832619782516072
+    second: GemHoverBlinkSpritesheet_25
+  - first:
+      213: -826239171421892572
+    second: GemHoverBlinkSpritesheet_26
+  - first:
+      213: -1232542458982112789
+    second: GemHoverBlinkSpritesheet_27
+  - first:
+      213: -7075435989676726429
+    second: GemHoverBlinkSpritesheet_28
+  - first:
+      213: 4173340494385963106
+    second: GemHoverBlinkSpritesheet_29
+  - first:
+      213: 8759887350217692000
+    second: GemHoverBlinkSpritesheet_30
+  - first:
+      213: 1008003620316834831
+    second: GemHoverBlinkSpritesheet_31
+  - first:
+      213: 5487729633820474965
+    second: GemHoverBlinkSpritesheet_32
+  - first:
+      213: 8702758106917774549
+    second: GemHoverBlinkSpritesheet_33
+  - first:
+      213: -2731300481032683373
+    second: GemHoverBlinkSpritesheet_34
+  - first:
+      213: 3177243717451914788
+    second: GemHoverBlinkSpritesheet_35
+  - first:
+      213: -5563816979779408435
+    second: GemHoverBlinkSpritesheet_36
+  - first:
+      213: 995261386307051909
+    second: GemHoverBlinkSpritesheet_37
+  - first:
+      213: 7546214444479472306
+    second: GemHoverBlinkSpritesheet_38
+  - first:
+      213: 3076272171033990833
+    second: GemHoverBlinkSpritesheet_39
+  - first:
+      213: 5287712487711223939
+    second: GemHoverBlinkSpritesheet_40
+  - first:
+      213: -3008821748930126951
+    second: GemHoverBlinkSpritesheet_41
+  - first:
+      213: 8644467953601871234
+    second: GemHoverBlinkSpritesheet_42
+  - first:
+      213: 2592211777033727467
+    second: GemHoverBlinkSpritesheet_43
+  - first:
+      213: 2239995300733129097
+    second: GemHoverBlinkSpritesheet_44
+  - first:
+      213: -7557241964623825488
+    second: GemHoverBlinkSpritesheet_45
+  - first:
+      213: -8630083808086377623
+    second: GemHoverBlinkSpritesheet_46
+  - first:
+      213: 825366730815091547
+    second: GemHoverBlinkSpritesheet_47
+  - first:
+      213: -908911212859241381
+    second: GemHoverBlinkSpritesheet_48
+  - first:
+      213: 127611030627352475
+    second: GemHoverBlinkSpritesheet_49
+  - first:
+      213: -1604053901307241740
+    second: GemHoverBlinkSpritesheet_50
+  - first:
+      213: 584100386494818882
+    second: GemHoverBlinkSpritesheet_51
+  - first:
+      213: -5566024741101092384
+    second: GemHoverBlinkSpritesheet_52
+  - first:
+      213: -2318160588073214339
+    second: GemHoverBlinkSpritesheet_53
+  - first:
+      213: -5682304816271139559
+    second: GemHoverBlinkSpritesheet_54
+  - first:
+      213: -8063107046784303370
+    second: GemHoverBlinkSpritesheet_55
+  - first:
+      213: -4486360729161216514
+    second: GemHoverBlinkSpritesheet_56
+  - first:
+      213: -7671783480249064076
+    second: GemHoverBlinkSpritesheet_57
+  - first:
+      213: -1479401004824928640
+    second: GemHoverBlinkSpritesheet_58
+  - first:
+      213: 766132329886325449
+    second: GemHoverBlinkSpritesheet_59
+  - first:
+      213: 6659823904829047965
+    second: GemHoverBlinkSpritesheet_60
+  - first:
+      213: -7695782718952020967
+    second: GemHoverBlinkSpritesheet_61
+  - first:
+      213: -7695926198188198888
+    second: GemHoverBlinkSpritesheet_62
+  - first:
+      213: 5767331159210463943
+    second: GemHoverBlinkSpritesheet_63
+  - first:
+      213: -2579651669143387349
+    second: GemHoverBlinkSpritesheet_64
+  - first:
+      213: -933159379313362069
+    second: GemHoverBlinkSpritesheet_65
+  - first:
+      213: -1129941866947411286
+    second: GemHoverBlinkSpritesheet_66
+  - first:
+      213: -3303689028710068212
+    second: GemHoverBlinkSpritesheet_67
+  - first:
+      213: -8472694056763086558
+    second: GemHoverBlinkSpritesheet_68
+  - first:
+      213: -7165792945501883633
+    second: GemHoverBlinkSpritesheet_69
+  - first:
+      213: 1781953220266100682
+    second: GemHoverBlinkSpritesheet_70
+  - first:
+      213: -2601005302510109878
+    second: GemHoverBlinkSpritesheet_71
+  - first:
+      213: -3314018697434566222
+    second: GemHoverBlinkSpritesheet_72
+  - first:
+      213: -3408087859578102303
+    second: GemHoverBlinkSpritesheet_73
+  - first:
+      213: -5129317230654948895
+    second: GemHoverBlinkSpritesheet_74
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49514999a0d4ae8b0800000000000000
+      internalID: -5122196918258887276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365115a6282c564a0800000000000000
+      internalID: -6600655813456358045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20a613b4e9ee7f40800000000000000
+      internalID: 5728272944528269357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3554f3122831d690800000000000000
+      internalID: -7579214978873010882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d1539a571da05d90800000000000000
+      internalID: -7110993495802555943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232849a411f5834c0800000000000000
+      internalID: -4307588515709550030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3521182b2e9201d0800000000000000
+      internalID: -3385970061636197059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4240a9e57f6c99000800000000000000
+      internalID: 43284437183104036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc13d7839d612ef0800000000000000
+      internalID: -134706033438024490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a00682b2b882a3b0800000000000000
+      internalID: -5502685493612642139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c0af5e48ff45c570800000000000000
+      internalID: 8486277000734941385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5afefb295924350800000000000000
+      internalID: 5999522111128839660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e5817bd15874460800000000000000
+      internalID: 7225890489811623475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b813564cf14cad60800000000000000
+      internalID: 7902763997895792823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55fc55d00d91965c0800000000000000
+      internalID: -4221814794315509931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90bd8ece4e65cdb0800000000000000
+      internalID: -4772286945377275745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b889862a3447d5dd0800000000000000
+      internalID: -2495710784656992117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23198dc4b9ebb4b20800000000000000
+      internalID: 3119796741102670130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9ec8638284c3730800000000000000
+      internalID: 3980135508239772064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcb375f0c67f25e0800000000000000
+      internalID: -1932195143994852163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a985063aba2e7c4c0800000000000000
+      internalID: -4267192895101970278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecd5d3d5b0e76180800000000000000
+      internalID: -9122075448667939602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86745b8e85f81fb0800000000000000
+      internalID: -4676718220452530548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bbbb4d9487b69d00800000000000000
+      internalID: 979171749202213812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e18e3d3425f296c00800000000000000
+      internalID: 894298031381538846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86dadd376382cdf00800000000000000
+      internalID: 1142832619782516072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42092e7e9db9884f0800000000000000
+      internalID: -826239171421892572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1e8c1f92125eee0800000000000000
+      internalID: -1232542458982112789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367ed4464700fcd90800000000000000
+      internalID: -7075435989676726429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260e0ae711faae930800000000000000
+      internalID: 4173340494385963106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063d926122f519970800000000000000
+      internalID: 8759887350217692000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_31
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0cea49b3f52dfd00800000000000000
+      internalID: 1008003620316834831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_32
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ef047d605582c40800000000000000
+      internalID: 5487729633820474965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_33
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d42cf8936866c870800000000000000
+      internalID: 8702758106917774549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_34
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390813dfea8781ad0800000000000000
+      internalID: -2731300481032683373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_35
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42e1097c356d71c20800000000000000
+      internalID: 3177243717451914788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcd26fc6fe959c2b0800000000000000
+      internalID: -5563816979779408435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_37
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581ae7d25f0efcd00800000000000000
+      internalID: 995261386307051909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_38
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2ee124e0a89b860800000000000000
+      internalID: 7546214444479472306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_39
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b696e2ad3d11ba20800000000000000
+      internalID: 3076272171033990833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_40
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380bc68fd7ab16940800000000000000
+      internalID: 5287712487711223939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_41
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99bdc8e8f848e36d0800000000000000
+      internalID: -3008821748930126951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_42
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28dffaeadc157f770800000000000000
+      internalID: 8644467953601871234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_43
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bededa880e269f320800000000000000
+      internalID: 2592211777033727467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_44
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9811eb6abdf061f10800000000000000
+      internalID: 2239995300733129097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5fbe029784f1790800000000000000
+      internalID: -7557241964623825488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_46
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96b392d2088cb3880800000000000000
+      internalID: -8630083808086377623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_47
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b53b8af2baa447b00800000000000000
+      internalID: 825366730815091547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_48
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5cc7294116e263f0800000000000000
+      internalID: -908911212859241381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_49
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ff6f56e8d55c100800000000000000
+      internalID: 127611030627352475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_50
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa9004b9714db9e0800000000000000
+      internalID: -1604053901307241740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_51
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24a2132f4342b1800800000000000000
+      internalID: 584100386494818882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_52
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e142afecf181c2b0800000000000000
+      internalID: -5566024741101092384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_53
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ed59f2a3d34dfd0800000000000000
+      internalID: -2318160588073214339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ddaa030e56421b0800000000000000
+      internalID: -5682304816271139559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_55
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fef8727cd61a1090800000000000000
+      internalID: -8063107046784303370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_56
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd4514cfae3db1c0800000000000000
+      internalID: -4486360729161216514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_57
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4756b025299588590800000000000000
+      internalID: -7671783480249064076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_58
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08edd03df9c187be0800000000000000
+      internalID: -1479401004824928640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_59
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca11dd7b49d1aa00800000000000000
+      internalID: 766132329886325449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_60
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d948df16e827c6c50800000000000000
+      internalID: 6659823904829047965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_61
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91466402466133590800000000000000
+      internalID: -7695782718952020967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_62
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 1004
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814be53c5e3923590800000000000000
+      internalID: -7695926198188198888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c218c6f12da90050800000000000000
+      internalID: 5767331159210463943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_64
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b230778797c333cd0800000000000000
+      internalID: -2579651669143387349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_65
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6bf3351d70cc03f0800000000000000
+      internalID: -933159379313362069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_66
+      rect:
+        serializedVersion: 2
+        x: 1506
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa202c3dbd3a150f0800000000000000
+      internalID: -1129941866947411286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_67
+      rect:
+        serializedVersion: 2
+        x: 2008
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0091630550f622d0800000000000000
+      internalID: -3303689028710068212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_68
+      rect:
+        serializedVersion: 2
+        x: 2510
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229a21845a1fa6a80800000000000000
+      internalID: -8472694056763086558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_69
+      rect:
+        serializedVersion: 2
+        x: 3012
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f033c55384dfd8c90800000000000000
+      internalID: -7165792945501883633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_70
+      rect:
+        serializedVersion: 2
+        x: 3514
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7035c3305cab810800000000000000
+      internalID: 1781953220266100682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_71
+      rect:
+        serializedVersion: 2
+        x: 4016
+        y: 502
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b3af4457f57ebd0800000000000000
+      internalID: -2601005302510109878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1f8689d8d3202d0800000000000000
+      internalID: -3314018697434566222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_73
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 0
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ed9686062a04b0d0800000000000000
+      internalID: -3408087859578102303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GemHoverBlinkSpritesheet_74
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 0
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9758ea72101d8b0800000000000000
+      internalID: -5129317230654948895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
