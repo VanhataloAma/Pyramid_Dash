@@ -24,7 +24,6 @@ namespace GA.Pyramid_dash {
             if (Input.GetKeyDown(KeyCode.Escape)) {
                 TogglePause();
             }
-            Debug.Log(Time.fixedDeltaTime);
         }
 
         void TogglePause() {

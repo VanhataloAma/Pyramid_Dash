@@ -27,6 +27,9 @@ namespace GA.Pyramid_dash {
 
         bool move_Horizontal;
 
+        [SerializeField]
+        GameObject Tile_Animation_Prefab;
+
         // Start is called before the first frame update
         void Start() {
             audioData = GetComponent<AudioSource>();
@@ -84,6 +87,7 @@ namespace GA.Pyramid_dash {
                 if (hit.transform.tag == "Tilemap") {
                     tilemap.SetTile(Vector3Int.FloorToInt(targetPosition), null);
                     transform.position = targetPosition;
+                    GameObject Tile_Animation_Instance = Instantiate(Tile_Animation_Prefab, transform.position, Quaternion.identity);
 
                 } else if (hit.transform.tag == "Boulder" && horizontal) {
                     pushPosition = hit.transform.position - transform.position;
