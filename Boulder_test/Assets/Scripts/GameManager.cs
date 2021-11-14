@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GA.Pyramid_dash;
 
 namespace GA.Pyramid_dash {
     public class GameManager : MonoBehaviour {
@@ -10,13 +11,14 @@ namespace GA.Pyramid_dash {
 
         private bool paused;
 
+        private int score;
+
         // Start is called before the first frame update
         void Start() {
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f;
             this.fixedDeltaTime = Time.fixedDeltaTime;
             paused = false;
-            Debug.Log(SceneManager.GetActiveScene().rootCount);
         }
 
         // Update is called once per frame
@@ -43,6 +45,20 @@ namespace GA.Pyramid_dash {
                 Time.timeScale = 1f;
             }
             Time.fixedDeltaTime = this.fixedDeltaTime * Time.timeScale;
+        }
+
+        public int Score {
+            get { return score;}
+        }
+
+        public bool SubmitScore(string name) {
+            Score scores = new Score(GameConfig.GetHighScorePath());
+            if (scores.Add(name, score)) {
+                scores.Save();
+                return true;
+            }
+
+            return false;
         }
     }
 }
