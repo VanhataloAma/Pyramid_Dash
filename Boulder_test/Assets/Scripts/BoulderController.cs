@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GA.Pyramid_dash;
 
 namespace GA.Pyramid_dash {
     public class BoulderController : MonoBehaviour {
@@ -120,7 +121,8 @@ namespace GA.Pyramid_dash {
 
         void OnCollisionEnter2D(Collision2D col) {
             if (col.transform.tag == "Player" && falling) {
-                SceneManager.LoadScene("GameOver");
+                hit.collider.gameObject.GetComponent<CharController>().GameOver();
+                Debug.Log("Hit plauer");
             }
         }
 

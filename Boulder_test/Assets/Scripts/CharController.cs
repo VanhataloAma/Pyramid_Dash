@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using GA.Pyramid_dash;
+using UnityEngine.SceneManagement;
 
 namespace GA.Pyramid_dash {
     public class CharController : MonoBehaviour {
@@ -29,6 +31,9 @@ namespace GA.Pyramid_dash {
 
         [SerializeField]
         GameObject Tile_Animation_Prefab;
+
+        [SerializeField]
+        GameManager gm;
 
         // Start is called before the first frame update
         void Start() {
@@ -96,6 +101,7 @@ namespace GA.Pyramid_dash {
                     }
                 } else if (hit.transform.tag == "Gem") {
                     Destroy(hit.transform.gameObject);
+                    gm.AddScore();
                     transform.position = targetPosition;
 
                 } else if (hit.transform.tag == "Portal") {
@@ -106,6 +112,13 @@ namespace GA.Pyramid_dash {
             } else {
                 transform.position = targetPosition;
             }
+        }
+
+        public void GameOver() {
+            if (gm.SubmitScore("Tester")) {
+                Debug.Log("Score Saved");
+            }
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

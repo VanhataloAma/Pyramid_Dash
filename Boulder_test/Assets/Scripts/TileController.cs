@@ -15,8 +15,6 @@ public class TileController : MonoBehaviour
     void Update() {
         if (!anim.IsPlaying("New Animation")) {
             Destroy(gameObject);
-        } else {
-            Debug.Log("Playing");
         }
     }
 

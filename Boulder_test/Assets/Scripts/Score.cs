@@ -94,6 +94,9 @@ namespace GA.Pyramid_dash {
         }
 
         public void Save() {
+            if (!Directory.Exists(GameConfig.GetGameDataPath())) {
+                Directory.CreateDirectory(GameConfig.GetGameDataPath());
+            }
             string json = JsonUtility.ToJson(scores);
             File.WriteAllText(scoreFile, json, System.Text.Encoding.UTF8);
         }

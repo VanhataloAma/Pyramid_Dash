@@ -51,6 +51,11 @@ namespace GA.Pyramid_dash {
             get { return score;}
         }
 
+        public void AddScore() {
+            score++;
+            Debug.Log(score);
+        }
+
         public bool SubmitScore(string name) {
             Score scores = new Score(GameConfig.GetHighScorePath());
             if (scores.Add(name, score)) {
