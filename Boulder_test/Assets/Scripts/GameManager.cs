@@ -11,7 +11,7 @@ namespace GA.Pyramid_dash {
 
         private bool paused;
 
-        private int score;
+        private static int score;
 
         // Start is called before the first frame update
         void Start() {

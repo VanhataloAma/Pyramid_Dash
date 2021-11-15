@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7496063136956661066}
   - component: {fileID: 7496063136956661070}
   m_Layer: 0
-  m_Name: Sand_poof_spritesheet_2_0
+  m_Name: Tile_Animation_Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
