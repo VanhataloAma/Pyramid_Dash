@@ -34,6 +34,14 @@ namespace GA.Pyramid_dash {
                 Array.Sort(scores, new EntryComparer());
             }
 
+            public Entry GetEntry(int index) {
+                if (index < 0 || index > scores.Length) {
+                    throw new System.ArgumentOutOfRangeException();
+                }
+
+                return scores[index];
+            }
+
             public bool Add(string name, int score) {
                 Entry newEntry = new Entry() {
                     Name = name,
@@ -71,11 +79,14 @@ namespace GA.Pyramid_dash {
         private string scoreFile;
 
         public Score(string path) {
-
             scoreFile = path;
             if (!Load()) {
                 scores = new ScoreArray(GameConfig.ScoreEntryCount);
             }
+        }
+
+        public Entry GetEntry(int index) {
+            return scores.GetEntry(index);
         }
 
         public bool Add(string name, int score) {

@@ -88,7 +88,6 @@ namespace GA.Pyramid_dash {
             hit = Physics2D.Raycast(transform.position, targetPosition - transform.position, 1f, ~LayerMask.GetMask("Player", "Ignore Raycast"));
             Debug.DrawRay(transform.position, targetPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
-                Debug.Log(hit.collider);
                 if (hit.transform.tag == "Tilemap") {
                     tilemap.SetTile(Vector3Int.FloorToInt(targetPosition), null);
                     transform.position = targetPosition;

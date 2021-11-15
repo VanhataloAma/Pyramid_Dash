@@ -11,7 +11,9 @@ namespace GA.Pyramid_dash {
 
         private bool paused;
 
-        private static int score;
+        private static int playerScore;
+
+        public int levelScore;
 
         // Start is called before the first frame update
         void Start() {
@@ -47,18 +49,18 @@ namespace GA.Pyramid_dash {
             Time.fixedDeltaTime = this.fixedDeltaTime * Time.timeScale;
         }
 
-        public int Score {
-            get { return score;}
+        public int PlayerScore {
+            get { return playerScore;}
         }
 
         public void AddScore() {
-            score++;
-            Debug.Log(score);
+            levelScore++;
+            Debug.Log(levelScore);
         }
 
         public bool SubmitScore(string name) {
             Score scores = new Score(GameConfig.GetHighScorePath());
-            if (scores.Add(name, score)) {
+            if (scores.Add(name, playerScore)) {
                 scores.Save();
                 return true;
             }
