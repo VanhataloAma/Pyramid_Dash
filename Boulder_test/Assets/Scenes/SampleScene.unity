@@ -4610,6 +4610,26 @@ Tilemap:
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
+  - first: {x: -1, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: -1, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
   - first: {x: 24, y: -1, z: 0}
     second:
       serializedVersion: 2
@@ -4675,6 +4695,26 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 5
       m_TileSpriteIndex: 5
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: -1, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 1
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      dummyAlignment: 0
+      m_AllTileFlags: 1073741825
+  - first: {x: 0, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 9
+      m_TileSpriteIndex: 1
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -6370,13 +6410,13 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 9e0f5b4d87d13824d809e0973a64ca82, type: 2}
   - m_RefCount: 71
     m_Data: {fileID: 11400000, guid: 86199a52ac55db749816fd7d217c29c8, type: 2}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 4
+    m_Data: {fileID: 11400000, guid: 9f3b3af9dc6ea0b4388ae627a2e01c91, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 46
     m_Data: {fileID: 21300000, guid: 375014f421cbe09438ee6c8234844d82, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 4
+    m_Data: {fileID: 21300000, guid: 7133b7c7e3895114992b47c4378177bf, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 6a4e1841881035d4ca513e756cec20d4, type: 3}
   - m_RefCount: 1
@@ -6394,7 +6434,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: f2e8530a147eb2442864731b3feede66, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 312
+  - m_RefCount: 316
     m_Data:
       e00: 1
       e01: 0
@@ -6413,7 +6453,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 312
+  - m_RefCount: 316
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -50811,6 +50851,10 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 4063441912950281320}
+    - target: {fileID: 6146051850800918708, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6146051850800918709, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
       propertyPath: m_Name
       value: CM vcam1
