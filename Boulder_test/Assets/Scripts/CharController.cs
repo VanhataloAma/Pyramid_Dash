@@ -116,6 +116,8 @@ namespace GA.Pyramid_dash {
         public void GameOver() {
             if (gm.SubmitScore("Tester")) {
                 Debug.Log("Score Saved");
+            } else {
+                Debug.Log("not saved");
             }
             SceneManager.LoadScene("GameOver");
         }

@@ -49,18 +49,13 @@ namespace GA.Pyramid_dash {
             Time.fixedDeltaTime = this.fixedDeltaTime * Time.timeScale;
         }
 
-        public int PlayerScore {
-            get { return playerScore;}
-        }
-
         public void AddScore() {
             levelScore++;
-            Debug.Log(levelScore);
         }
 
         public bool SubmitScore(string name) {
             Score scores = new Score(GameConfig.GetHighScorePath());
-            if (scores.Add(name, playerScore)) {
+            if (scores.Add(name, levelScore)) {
                 scores.Save();
                 return true;
             }
