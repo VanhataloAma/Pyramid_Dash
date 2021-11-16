@@ -21,7 +21,7 @@ namespace GA.Pyramid_dash {
 
             public class EntryComparer : IComparer<Entry> {
                 public int Compare(Entry x, Entry y) {
-                    return y.Score - x.Score;
+                    return x.Score - y.Score;
                 }
             }
             public Entry[] scores;
@@ -35,7 +35,7 @@ namespace GA.Pyramid_dash {
             }
 
             public Entry GetEntry(int index) {
-                if (index < 0 || index > scores.Length) {
+                if (index < 0 || index >= scores.Length) {
                     throw new System.ArgumentOutOfRangeException();
                 }
 

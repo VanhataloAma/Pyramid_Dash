@@ -8,7 +8,7 @@ using GA.Pyramid_dash;
 namespace GA.Pyramid_dash {
     public static class GameConfig {
 
-        public const int ScoreEntryCount = 5;
+        public const int ScoreEntryCount = 10;
 
         public const string HighScoreFile = "score.json";
         
