@@ -23,8 +23,10 @@ namespace GA.Pyramid_dash {
                 Vector2 position = entryTemplate.rectTransform.anchoredPosition;
                 position.y = -i * 36;
                 item.rectTransform.anchoredPosition = position;
-
-                item.gameObject.SetActive(true);
+                if (scoreEntry.Score > 0) {
+                    item.gameObject.SetActive(true);
+                }
+                
             }
         }
 

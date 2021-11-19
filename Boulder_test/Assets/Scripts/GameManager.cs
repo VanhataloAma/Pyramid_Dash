@@ -15,6 +15,11 @@ namespace GA.Pyramid_dash {
 
         public int levelScore;
 
+        public static string playerName;
+
+        [SerializeField]
+        bool inMenu = false;
+
         // Start is called before the first frame update
         void Start() {
             Time.timeScale = 1f;
@@ -25,9 +30,12 @@ namespace GA.Pyramid_dash {
 
         // Update is called once per frame
         void Update() {
-            if (Input.GetKeyDown(KeyCode.Escape)) {
-                TogglePause();
+            if (!inMenu) {
+                if (Input.GetKeyDown(KeyCode.Escape)) {
+                    TogglePause();
+                }
             }
+            
         }
 
         void TogglePause() {
@@ -53,14 +61,20 @@ namespace GA.Pyramid_dash {
             levelScore++;
         }
 
-        public bool SubmitScore(string name) {
+        public bool SubmitScore() {
             Score scores = new Score(GameConfig.GetHighScorePath());
-            if (scores.Add(name, levelScore)) {
+            if (scores.Add(playerName, levelScore)) {
                 scores.Save();
                 return true;
             }
 
             return false;
+        }
+
+        public void SetName(string name) {
+            playerName = name;
+            Debug.Log(playerName);
+            SceneManager.LoadScene("Menu");
         }
     }
 }
