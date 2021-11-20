@@ -40,7 +40,10 @@ public class EnemyMovement : MonoBehaviour
         float playerPositionX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
         float playerPositionY = GameObject.FindGameObjectWithTag("Player").transform.position.y;
 
-        if (playerPositionX >= 0 && playerPositionY >= 0) {
+        float enemyPositionX = GameObject.FindGameObjectWithTag("Enemy").transform.position.x;
+        float enemyPositionY = GameObject.FindGameObjectWithTag("Enemy").transform.position.y;
+
+        if (playerPositionX > enemyPositionX && playerPositionY > enemyPositionY) {
             int generateRandom = randomNumber.Next(1, 3);
             if (generateRandom == 1)
             {
@@ -51,7 +54,7 @@ public class EnemyMovement : MonoBehaviour
                 nextPos.x += 1f;
             }
         }
-        else if(playerPositionX >= 0 && playerPositionY <= 0) {
+        else if(playerPositionX > enemyPositionX && playerPositionY < enemyPositionY) {
             int generateRandom = randomNumber.Next(2, 4);
             if (generateRandom == 2)
             {
@@ -62,7 +65,7 @@ public class EnemyMovement : MonoBehaviour
                 nextPos.y -= 1f;
             }
         }
-        else if (playerPositionX <= 0 && playerPositionY <= 0) {
+        else if (playerPositionX < enemyPositionX && playerPositionY < enemyPositionY) {
             int generateRandom = randomNumber.Next(3, 5);
             if (generateRandom == 3)
             {
@@ -86,7 +89,7 @@ public class EnemyMovement : MonoBehaviour
         }
 
         moveTimer += Time.deltaTime;
-        if(moveTimer >= 2.0f)
+        if(moveTimer >= 0.2f)
         {
             transform.position = nextPos;
             moveTimer = 0;

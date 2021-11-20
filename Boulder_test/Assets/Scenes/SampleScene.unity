@@ -1216,6 +1216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block
       objectReference: {fileID: 0}
+    - target: {fileID: 7335891658243600863, guid: 742bd502e9805bf4caf35cfa5be6bb0d, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 742bd502e9805bf4caf35cfa5be6bb0d, type: 3}
 --- !u!1 &438172177 stripped
@@ -1639,7 +1643,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5000005, y: 0.49999976, z: -10}
+  m_LocalPosition: {x: 2.5000002, y: 0.49999976, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -50809,7 +50813,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6146051850800918707, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.5000005
+      value: 2.5000002
       objectReference: {fileID: 0}
     - target: {fileID: 6146051850800918707, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
       propertyPath: m_LocalPosition.y

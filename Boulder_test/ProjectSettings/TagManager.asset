@@ -9,6 +9,7 @@ TagManager:
   - Boulder
   - Gem
   - Portal
+  - Enemy
   layers:
   - Default
   - TransparentFX
