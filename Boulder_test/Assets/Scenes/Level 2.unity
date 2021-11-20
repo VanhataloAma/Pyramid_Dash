@@ -128,6 +128,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 427583010896342518, guid: fc24ae0c41388b746861cd380d5973e1, type: 3}
   m_PrefabInstance: {fileID: 1040231829}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &30641297 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7480505466716248821, guid: 9e0f16699645d81488f56e5868ddb4fa, type: 3}
+  m_PrefabInstance: {fileID: 1164785915}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1256f60065b828a40a665f80db5bec58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &40103643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1422,6 +1433,10 @@ PrefabInstance:
       value: character
       objectReference: {fileID: 0}
     - target: {fileID: 4532179825954938587, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 30641297}
+    - target: {fileID: 4532179825954938587, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
       propertyPath: tilemap
       value: 
       objectReference: {fileID: 1237116161}
@@ -1429,6 +1444,10 @@ PrefabInstance:
       propertyPath: boulderPrefab
       value: 
       objectReference: {fileID: 1022465711, guid: fc24ae0c41388b746861cd380d5973e1, type: 3}
+    - target: {fileID: 4532179825954938587, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+      propertyPath: Tile_Animation_Prefab
+      value: 
+      objectReference: {fileID: 7496063136956661067, guid: 11284426b6a85c64fbd4d3dadeb650b4, type: 3}
     - target: {fileID: 7679671949442012761, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
       propertyPath: m_SortingOrder
       value: 2
@@ -8042,7 +8061,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16

@@ -24,8 +24,7 @@ namespace GA.Pyramid_dash {
 
         float move_Timer;
 
-        [SerializeField]
-        float move_Speed = 0.25f;
+        float move_Speed = 0.2f;
 
         bool move_Horizontal;
 
