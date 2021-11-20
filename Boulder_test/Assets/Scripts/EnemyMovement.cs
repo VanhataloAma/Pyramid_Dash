@@ -1,41 +1,34 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 using System;
 using GA.Pyramid_dash;
 
-public class EnemyMovement : MonoBehaviour
-{
+public class EnemyMovement : MonoBehaviour {
+
     private Vector3 nextPos;
+
     float moveTimer;
 
-    void FixedUpdate()
-    {
+    RaycastHit2D hit;
+
+    [SerializeField]
+    Tilemap tilemap;
+
+
+    void FixedUpdate(){
+
+        MovementEnemy();
+
+        Detection();
 
         nextPos = transform.position;
+    }
+
+    void MovementEnemy() {
 
         System.Random randomNumber = new System.Random();
-        //int generateRandom = randomNumber.Next(1, 5);
-        //Debug.Log("Number" + generateRandom);
-        // 1=up, 2=right, 3=down, 4=left (also)5=up
-
-
-        /*if (generateRandom == 1)
-        {
-            nextPos.y += 1f;
-        }
-        else if (generateRandom == 2)
-        {
-            nextPos.x += 1f;
-        }
-        else if (generateRandom == 3)
-        {
-            nextPos.y -= 1f;
-        }
-        else if (generateRandom == 4)
-        {
-            nextPos.x -= 1f;
-        }*/
 
         float playerPositionX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
         float playerPositionY = GameObject.FindGameObjectWithTag("Player").transform.position.y;
@@ -45,11 +38,11 @@ public class EnemyMovement : MonoBehaviour
 
         if (playerPositionX > enemyPositionX && playerPositionY > enemyPositionY) {
             int generateRandom = randomNumber.Next(1, 3);
-            if (generateRandom == 1)
+            if (generateRandom == 1) //if random number is one AND the tile is free?
             {
                 nextPos.y += 1f;
             }
-            else if (generateRandom == 2)
+            else if (generateRandom == 2) //if random number is two AND the tile is free?
             {
                 nextPos.x += 1f;
             }
@@ -94,5 +87,18 @@ public class EnemyMovement : MonoBehaviour
             transform.position = nextPos;
             moveTimer = 0;
         }
+    }
+
+    void Detection() {
+
+        hit = Physics2D.Raycast(transform.position, Vector3.up, 1f);
+        Debug.DrawRay(transform.position, Vector3.up, Color.green, 1, false);
+        hit = Physics2D.Raycast(transform.position, Vector3.right, 1f);
+        Debug.DrawRay(transform.position, Vector3.right, Color.green, 1, false);
+        hit = Physics2D.Raycast(transform.position, Vector3.down, 1f);
+        Debug.DrawRay(transform.position, Vector3.down, Color.green, 1, false);
+        hit = Physics2D.Raycast(transform.position, Vector3.left, 1f);
+        Debug.DrawRay(transform.position, Vector3.left, Color.green, 1, false);
+
     }
 }
