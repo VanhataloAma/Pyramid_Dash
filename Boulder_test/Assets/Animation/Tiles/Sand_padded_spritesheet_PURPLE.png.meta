@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 22d8da3aedee935498562fff0c01c2a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6490865392733533028
+    second: Sand_padded_spritesheet_PURPLE_0
+  - first:
+      213: 8933489491715433720
+    second: Sand_padded_spritesheet_PURPLE_1
+  - first:
+      213: -8162430252419004891
+    second: Sand_padded_spritesheet_PURPLE_2
+  - first:
+      213: 4216990507458187700
+    second: Sand_padded_spritesheet_PURPLE_3
+  - first:
+      213: 5230356104906595570
+    second: Sand_padded_spritesheet_PURPLE_4
+  - first:
+      213: 8385817921593178791
+    second: Sand_padded_spritesheet_PURPLE_5
+  - first:
+      213: -9159855564287023390
+    second: Sand_padded_spritesheet_PURPLE_6
+  - first:
+      213: -7816119538876817223
+    second: Sand_padded_spritesheet_PURPLE_7
+  - first:
+      213: 2186829561355236138
+    second: Sand_padded_spritesheet_PURPLE_8
+  - first:
+      213: 2455521279425653856
+    second: Sand_padded_spritesheet_PURPLE_9
+  - first:
+      213: -4235109053576681927
+    second: Sand_padded_spritesheet_PURPLE_10
+  - first:
+      213: -4687755301290655462
+    second: Sand_padded_spritesheet_PURPLE_11
+  - first:
+      213: -5721311466413625091
+    second: Sand_padded_spritesheet_PURPLE_12
+  - first:
+      213: -4749948161181560528
+    second: Sand_padded_spritesheet_PURPLE_13
+  - first:
+      213: -532135842339503300
+    second: Sand_padded_spritesheet_PURPLE_14
+  - first:
+      213: 4099423868283724313
+    second: Sand_padded_spritesheet_PURPLE_15
+  - first:
+      213: -8413113374699585922
+    second: Sand_padded_spritesheet_PURPLE_16
+  - first:
+      213: 5266369566295670812
+    second: Sand_padded_spritesheet_PURPLE_17
+  - first:
+      213: 3420647569031190154
+    second: Sand_padded_spritesheet_PURPLE_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10040
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46332c24faf241a50800000000000000
+      internalID: 6490865392733533028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9538
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4226e6c512afb70800000000000000
+      internalID: 8933489491715433720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9036
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526c9ac8ee839be80800000000000000
+      internalID: -8162430252419004891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8534
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b15d322682c58a30800000000000000
+      internalID: 4216990507458187700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8032
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fcd0c17a25f59840800000000000000
+      internalID: 5230356104906595570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7530
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aa7aaf38f8606470800000000000000
+      internalID: 8385817921593178791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7028
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e669c035e7a1e080800000000000000
+      internalID: -9159855564287023390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6526
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0e143e0b0978390800000000000000
+      internalID: -7816119538876817223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6024
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23f6e456ed295e10800000000000000
+      internalID: 2186829561355236138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5522
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c249ef793c31220800000000000000
+      internalID: 2455521279425653856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5020
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936658c11ced935c0800000000000000
+      internalID: -4235109053576681927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4518
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11cd98e36fb1feb0800000000000000
+      internalID: -4687755301290655462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0fb0bb881d990b0800000000000000
+      internalID: -5721311466413625091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 031d04f405bc41eb0800000000000000
+      internalID: -4749948161181560528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33c91155497d98f0800000000000000
+      internalID: -532135842339503300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9122fccd94414e830800000000000000
+      internalID: 4099423868283724313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7e71f5d5fd9e3b80800000000000000
+      internalID: -8413113374699585922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c104bf6d737e51940800000000000000
+      internalID: 5266369566295670812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_PURPLE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8658e537d4987f20800000000000000
+      internalID: 3420647569031190154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

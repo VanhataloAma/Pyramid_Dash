@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: c28a4e41077d03d46b1afb822fd91984
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2573470499124514378
+    second: Sand_padded_spritesheet_BROWN_0
+  - first:
+      213: 3480898260897873721
+    second: Sand_padded_spritesheet_BROWN_1
+  - first:
+      213: 4927013577696120265
+    second: Sand_padded_spritesheet_BROWN_2
+  - first:
+      213: 1972099218007976295
+    second: Sand_padded_spritesheet_BROWN_3
+  - first:
+      213: 5034456874923593345
+    second: Sand_padded_spritesheet_BROWN_4
+  - first:
+      213: 3432248274480446744
+    second: Sand_padded_spritesheet_BROWN_5
+  - first:
+      213: -2101233582411984892
+    second: Sand_padded_spritesheet_BROWN_6
+  - first:
+      213: 2145830101246700894
+    second: Sand_padded_spritesheet_BROWN_7
+  - first:
+      213: 2513850572811994061
+    second: Sand_padded_spritesheet_BROWN_8
+  - first:
+      213: 5078885363542169983
+    second: Sand_padded_spritesheet_BROWN_9
+  - first:
+      213: -6228585655972863867
+    second: Sand_padded_spritesheet_BROWN_10
+  - first:
+      213: -2580459121133862898
+    second: Sand_padded_spritesheet_BROWN_11
+  - first:
+      213: 1605988321991725113
+    second: Sand_padded_spritesheet_BROWN_12
+  - first:
+      213: -672112011826125360
+    second: Sand_padded_spritesheet_BROWN_13
+  - first:
+      213: 6807391901056287491
+    second: Sand_padded_spritesheet_BROWN_14
+  - first:
+      213: -4269597479436278209
+    second: Sand_padded_spritesheet_BROWN_15
+  - first:
+      213: -2139073356535682275
+    second: Sand_padded_spritesheet_BROWN_16
+  - first:
+      213: 1826999005415696473
+    second: Sand_padded_spritesheet_BROWN_17
+  - first:
+      213: -5964577875144286385
+    second: Sand_padded_spritesheet_BROWN_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10040
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b17cb34732394cd0800000000000000
+      internalID: -2573470499124514378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9538
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93fb7149682ae4030800000000000000
+      internalID: 3480898260897873721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9036
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd8a169eb4406440800000000000000
+      internalID: 4927013577696120265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8534
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769e0374acd4e5b10800000000000000
+      internalID: 1972099218007976295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8032
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e08d2aadbfdd540800000000000000
+      internalID: 5034456874923593345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7530
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dba5dee9bc1af20800000000000000
+      internalID: 3432248274480446744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7028
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400563a803be6d2e0800000000000000
+      internalID: -2101233582411984892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6526
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d6625ab1587cd10800000000000000
+      internalID: 2145830101246700894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6024
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc30fdae6cdf2e220800000000000000
+      internalID: 2513850572811994061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5522
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f799cdc3453db7640800000000000000
+      internalID: 5078885363542169983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5020
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580e4aaa85e9f89a0800000000000000
+      internalID: -6228585655972863867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4518
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e004667e91e503cd0800000000000000
+      internalID: -2580459121133862898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9301eb5bedd994610800000000000000
+      internalID: 1605988321991725113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d5a4ddafad2ca6f0800000000000000
+      internalID: -672112011826125360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303c45dedd6b87e50800000000000000
+      internalID: 6807391901056287491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f362c48b6b75fb4c0800000000000000
+      internalID: -4269597479436278209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b20339d1c7052e0800000000000000
+      internalID: -2139073356535682275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9586bc26aedca5910800000000000000
+      internalID: 1826999005415696473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BROWN_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fded43600993da0800000000000000
+      internalID: -5964577875144286385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

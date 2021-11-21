@@ -1,0 +1,564 @@
+fileFormatVersion: 2
+guid: 85f5767eca3f5f446b6d8eb539959fb2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3203909601279172926
+    second: Sand_padded_spritesheet_BLUE_0
+  - first:
+      213: 5397645743511031484
+    second: Sand_padded_spritesheet_BLUE_1
+  - first:
+      213: -9081288703439919332
+    second: Sand_padded_spritesheet_BLUE_2
+  - first:
+      213: -942873316464857810
+    second: Sand_padded_spritesheet_BLUE_3
+  - first:
+      213: 956987824359997834
+    second: Sand_padded_spritesheet_BLUE_4
+  - first:
+      213: -5471383229069624282
+    second: Sand_padded_spritesheet_BLUE_5
+  - first:
+      213: 3359068661950419024
+    second: Sand_padded_spritesheet_BLUE_6
+  - first:
+      213: -1940499406338388954
+    second: Sand_padded_spritesheet_BLUE_7
+  - first:
+      213: 5694589662236319396
+    second: Sand_padded_spritesheet_BLUE_8
+  - first:
+      213: -1603908870574951542
+    second: Sand_padded_spritesheet_BLUE_9
+  - first:
+      213: 3297685498496904210
+    second: Sand_padded_spritesheet_BLUE_10
+  - first:
+      213: 8985348757193495725
+    second: Sand_padded_spritesheet_BLUE_11
+  - first:
+      213: -2095696893257214607
+    second: Sand_padded_spritesheet_BLUE_12
+  - first:
+      213: 8328273764166012066
+    second: Sand_padded_spritesheet_BLUE_13
+  - first:
+      213: 7371188236848136819
+    second: Sand_padded_spritesheet_BLUE_14
+  - first:
+      213: 2581838541240884794
+    second: Sand_padded_spritesheet_BLUE_15
+  - first:
+      213: 4380180580116962939
+    second: Sand_padded_spritesheet_BLUE_16
+  - first:
+      213: -1048711099187512518
+    second: Sand_padded_spritesheet_BLUE_17
+  - first:
+      213: -3616259393245029418
+    second: Sand_padded_spritesheet_BLUE_18
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10040
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce9a43513d6983d0800000000000000
+      internalID: -3203909601279172926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9538
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbecf5da43a48ea40800000000000000
+      internalID: 5397645743511031484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9036
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1722b8f908c8f180800000000000000
+      internalID: -9081288703439919332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8534
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2deae7d6bd3ae2f0800000000000000
+      internalID: -942873316464857810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8032
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a810a5d1b57e74d00800000000000000
+      internalID: 956987824359997834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7530
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c764911fdb114b0800000000000000
+      internalID: -5471383229069624282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7028
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05093b3a62fcd9e20800000000000000
+      internalID: 3359068661950419024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6526
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c08563216f115e0800000000000000
+      internalID: -1940499406338388954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6024
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae1537602f370f40800000000000000
+      internalID: 5694589662236319396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5522
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83384d4165cdb9e0800000000000000
+      internalID: -1603908870574951542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5020
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c6dde2d7bb3cd20800000000000000
+      internalID: 3297685498496904210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4518
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da41487961f52bc70800000000000000
+      internalID: 8985348757193495725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4016
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 175938077c69ae2e0800000000000000
+      internalID: -2095696893257214607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3514
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac02590dd8f39370800000000000000
+      internalID: 8328273764166012066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3012
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3720fdda5a8bb4660800000000000000
+      internalID: 7371188236848136819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2510
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3e531e597884d320800000000000000
+      internalID: 2581838541240884794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2008
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e9fe9c70789cc30800000000000000
+      internalID: 4380180580116962939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1506
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b3be4cfca3271f0800000000000000
+      internalID: -1048711099187512518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sand_padded_spritesheet_BLUE_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 502
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dbd5f9dd3770ddc0800000000000000
+      internalID: -3616259393245029418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
