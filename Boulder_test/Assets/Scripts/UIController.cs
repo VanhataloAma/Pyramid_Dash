@@ -9,6 +9,9 @@ namespace GA.Pyramid_dash {
         [SerializeField]
         private TMP_Text scoreText;
 
+        [SerializeField]
+        private TMP_Text gemsText;
+
         private static UIController current;
 
         public static UIController Current {
@@ -23,5 +26,8 @@ namespace GA.Pyramid_dash {
             scoreText.text = "Score: " + score;
         }
 
+        public void SetGems(int gems, int gemsMax) {
+            gemsText.text = "Gems: " + gems + "/" + gemsMax;
+        }
     }
 }

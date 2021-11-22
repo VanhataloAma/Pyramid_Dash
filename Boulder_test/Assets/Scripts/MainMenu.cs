@@ -14,7 +14,6 @@ namespace GA.Pyramid_dash
         public void PlayGame ()
         {
             SceneManager.LoadScene("Level 1");
-            GameManager.playerName = "Dude";
         }
 
         public void QuitGame ()

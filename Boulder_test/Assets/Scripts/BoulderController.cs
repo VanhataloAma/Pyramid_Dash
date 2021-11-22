@@ -52,7 +52,7 @@ namespace GA.Pyramid_dash {
             raycast_Start_Right = transform.position;
             raycast_Start_Right.x += 0.35f;
 
-            hit = Physics2D.Raycast(raycast_Start_Down, nextPosition - transform.position, 0.6f);
+            hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(0, -1, 0), 0.6f);
             Debug.DrawRay(raycast_Start_Down, nextPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
                 if (hit.transform.tag == "Player") {

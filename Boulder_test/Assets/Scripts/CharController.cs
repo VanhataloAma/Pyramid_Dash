@@ -32,7 +32,7 @@ namespace GA.Pyramid_dash {
         GameObject Tile_Animation_Prefab;
 
         [SerializeField]
-        GameManager gm;
+        LevelController lC;
 
         // Start is called before the first frame update
         void Start() {
@@ -99,7 +99,7 @@ namespace GA.Pyramid_dash {
                     }
                 } else if (hit.transform.tag == "Gem") {
                     Destroy(hit.transform.gameObject);
-                    gm.AddScore();
+                    lC.AddScore();
                     transform.position = targetPosition;
 
                 } else if (hit.transform.tag == "Portal") {

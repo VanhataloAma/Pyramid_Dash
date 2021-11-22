@@ -1,0 +1,73 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using GA.Pyramid_dash;
+
+namespace GA.Pyramid_dash {
+    public class LevelController : MonoBehaviour {
+        
+        private float fixedDeltaTime;
+
+        public int requiredGems = 10;
+
+        public int gemValue = 10;
+
+        public int levelScore;
+
+        int gemsCollected;
+
+        private bool paused;
+
+        [SerializeField]
+        UIController ui;
+
+        [SerializeField]
+        PortalController portal;
+
+        void Start() {
+            Time.timeScale = 1f;
+            Time.fixedDeltaTime = 0.02f;
+            this.fixedDeltaTime = Time.fixedDeltaTime;
+            paused = false;
+            ui.SetGems(gemsCollected, requiredGems);
+        }
+
+        // Update is called once per frame
+        void Update() {
+            if (Input.GetKeyDown(KeyCode.Escape)) {
+                TogglePause();
+            }
+
+            if (gemsCollected >= requiredGems && !portal.IsActive()) {
+                portal.Activate();
+            }
+        }
+
+        void TogglePause() {
+            if (!paused) {
+                var SceneLoad = SceneManager.LoadSceneAsync("PauseMenu", LoadSceneMode.Additive);
+                SceneLoad.completed += (s) => {
+                    Debug.Log("Done");
+                    Debug.Log(SceneManager.GetSceneAt(0).name);
+                    SceneManager.GetSceneByName("PauseMenu").GetRootGameObjects()[0].gameObject.transform.position = GameObject.Find("Main Camera").transform.position;
+                };
+                paused = true;
+                Time.timeScale = 0f;
+
+            } else {
+                SceneManager.UnloadSceneAsync("PauseMenu");
+                paused = false;
+                Time.timeScale = 1f;
+            }
+            Time.fixedDeltaTime = this.fixedDeltaTime * Time.timeScale;
+        }
+
+        public void AddScore() {
+            gemsCollected++;
+            levelScore += gemValue;
+            ui.SetScore(levelScore);
+            ui.SetGems(gemsCollected, requiredGems);
+        }
+    }
+}
