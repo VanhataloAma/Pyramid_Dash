@@ -100,5 +100,34 @@ public class EnemyMovement : MonoBehaviour {
         hit = Physics2D.Raycast(transform.position, Vector3.left, 1f);
         Debug.DrawRay(transform.position, Vector3.left, Color.green, 1, false);
 
+        if (hit.collider != null)
+        {
+            if (hit.transform.tag == "Tilemap")
+            {
+               Debug.Log("Tile");
+            } 
+            else if (hit.transform.tag == "Boulder")
+            {
+                Debug.Log("Boulder");
+            }
+            else if (hit.transform.tag == "Player")
+            {
+                Debug.Log("Player");
+            }
+            else if (hit.transform.tag == "block")
+            {
+                Debug.Log("Block");
+            }
+            else if (hit.transform.tag == "Gem")
+            {
+                Debug.Log("Gem");
+            }
+        }
+        else
+        {
+            transform.position = nextPos;
+        }
+
+
     }
 }
