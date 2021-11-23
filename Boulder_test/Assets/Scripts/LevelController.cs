@@ -19,7 +19,7 @@ namespace GA.Pyramid_dash {
 
         public static int current_Level_Index;
 
-        float timeLeft;
+        public static float timeLeft;
 
         int gemsCollected;
 
@@ -40,7 +40,6 @@ namespace GA.Pyramid_dash {
             timeLeft = timeLimit;
             levelScore = 0;
             current_Level_Index = SceneManager.GetActiveScene().buildIndex;
-            Debug.Log(current_Level_Index);
         }
 
         // Update is called once per frame

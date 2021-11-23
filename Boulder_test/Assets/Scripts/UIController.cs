@@ -4,8 +4,7 @@ using UnityEngine;
 using TMPro;
 
 namespace GA.Pyramid_dash {
-    public class UIController : MonoBehaviour
-    {
+    public class UIController : MonoBehaviour {
         [SerializeField]
         private TMP_Text scoreText;
 
