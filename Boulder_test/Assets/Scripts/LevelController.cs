@@ -13,7 +13,13 @@ namespace GA.Pyramid_dash {
 
         public int gemValue = 10;
 
-        public int levelScore;
+        public int timeLimit = 150;
+
+        public static int levelScore;
+
+        public static int current_Level_Index;
+
+        float timeLeft;
 
         int gemsCollected;
 
@@ -31,6 +37,10 @@ namespace GA.Pyramid_dash {
             this.fixedDeltaTime = Time.fixedDeltaTime;
             paused = false;
             ui.SetGems(gemsCollected, requiredGems);
+            timeLeft = timeLimit;
+            levelScore = 0;
+            current_Level_Index = SceneManager.GetActiveScene().buildIndex;
+            Debug.Log(current_Level_Index);
         }
 
         // Update is called once per frame
@@ -42,6 +52,11 @@ namespace GA.Pyramid_dash {
             if (gemsCollected >= requiredGems && !portal.IsActive()) {
                 portal.Activate();
             }
+        }
+
+        void FixedUpdate() {
+            timeLeft -= Time.fixedDeltaTime;
+            ui.SetTimer((int)timeLeft);
         }
 
         void TogglePause() {

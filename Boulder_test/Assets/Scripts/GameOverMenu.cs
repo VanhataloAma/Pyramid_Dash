@@ -2,21 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GA.Pyramid_dash;
 
-namespace GA.Pyramid_dash
-{
-    public class GameOverMenu : MonoBehaviour
-    {
+namespace GA.Pyramid_dash {
+    public class GameOverMenu : MonoBehaviour{
 
         private float timer = 2.5f;
-
-        void Start ()
-        {
-            
-        }
-
-        void Update()
-        {
+        
+        void Update() {
             timer -= Time.deltaTime;
             if (timer <= 0)
             {

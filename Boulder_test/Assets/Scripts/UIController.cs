@@ -12,6 +12,9 @@ namespace GA.Pyramid_dash {
         [SerializeField]
         private TMP_Text gemsText;
 
+        [SerializeField]
+        private TMP_Text timerText;
+
         private static UIController current;
 
         public static UIController Current {
@@ -28,6 +31,10 @@ namespace GA.Pyramid_dash {
 
         public void SetGems(int gems, int gemsMax) {
             gemsText.text = "Gems: " + gems + "/" + gemsMax;
+        }
+
+        public void SetTimer(int timer) {
+            timerText.text = "Time: " + timer;
         }
     }
 }
