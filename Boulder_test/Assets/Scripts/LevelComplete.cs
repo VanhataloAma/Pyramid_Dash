@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GA.Pyramid_dash;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace GA.Pyramid_dash {
     public class LevelComplete : MonoBehaviour {
@@ -14,17 +15,24 @@ namespace GA.Pyramid_dash {
 
         [SerializeField]
         TMP_Text totalText;
+
+        [SerializeField]
+        GameManager gm;
         // Start is called before the first frame update
         void Start() {
             gemsText.text = "Gems: " + LevelController.levelScore;
             timeText.text = "Time: " + (int)LevelController.timeLeft;
-            totalText.text = "Total Score: " + LevelController.levelScore + (int)LevelController.timeLeft;
-            
+            totalText.text = "Total Score: " + (LevelController.levelScore + (int)LevelController.timeLeft);
+            gm.AddScore((LevelController.levelScore + (int)LevelController.timeLeft));
         }
 
-        // Update is called once per frame
-        void Update() {
-            
+        public void Continue() {
+            SceneManager.LoadScene(LevelController.nextLevel);
         }
+
+        public void QuitGame() {
+            SceneManager.LoadScene("Menu");
+        }
+
     }
 }

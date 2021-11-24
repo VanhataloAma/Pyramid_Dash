@@ -11,7 +11,7 @@ namespace GA.Pyramid_dash
         bool active = false;
 
         [SerializeField]
-        string next_Level;
+        public string next_Level;
 
         Collider2D portalCollider;
 
@@ -39,7 +39,7 @@ namespace GA.Pyramid_dash
         void Update()
         {
             if (portalCollider.bounds.Intersects(playerCollider.bounds) && active) {
-                SceneManager.LoadScene(next_Level);
+                SceneManager.LoadScene("LevelComplete");
             }
         }
 
