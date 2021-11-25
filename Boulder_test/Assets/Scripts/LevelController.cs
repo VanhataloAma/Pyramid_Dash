@@ -60,6 +60,9 @@ namespace GA.Pyramid_dash {
         void FixedUpdate() {
             timeLeft -= Time.fixedDeltaTime;
             ui.SetTimer((int)timeLeft);
+            if (timeLeft <= 0) {
+                SceneManager.LoadScene("GameOver");
+            }
         }
 
         void TogglePause() {
