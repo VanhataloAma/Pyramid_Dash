@@ -11,5 +11,9 @@ namespace GA.Pyramid_dash {
             SceneManager.LoadScene(LevelController.current_Level_Index);
         }
 
+        public void QuitGame() {
+            SceneManager.LoadScene("Menu");
+        }
+
     }
 }

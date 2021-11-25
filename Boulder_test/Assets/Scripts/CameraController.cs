@@ -12,15 +12,12 @@ namespace GA.Pyramid_dash {
 
         Vector3 charaPosition;
 
-        Vector3 targetPosition;
-
         float MoveX = 0;
         float MoveY = 0;
 
         // Update is called once per frame
         void FixedUpdate() {
             charaPosition = character.transform.position;
-            targetPosition = transform.position;
 
             if (transform.position.x - charaPosition.x >= 10f) {
                 MoveX = -0.5f;
