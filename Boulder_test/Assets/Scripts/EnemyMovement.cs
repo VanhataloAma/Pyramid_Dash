@@ -6,24 +6,16 @@ using System;
 using GA.Pyramid_dash;
 
 public class EnemyMovement : MonoBehaviour {
-
     private Vector3 nextPos;
-
     float moveTimer;
-
     RaycastHit2D hit;
 
     [SerializeField]
     Tilemap tilemap;
 
-
     void FixedUpdate(){
-
         MovementEnemy();
-
-        Detection();
-
-        nextPos = transform.position;
+        nextPos = new Vector3(0, 0, 0);
     }
 
     void MovementEnemy() {
@@ -36,98 +28,65 @@ public class EnemyMovement : MonoBehaviour {
         float enemyPositionX = GameObject.FindGameObjectWithTag("Enemy").transform.position.x;
         float enemyPositionY = GameObject.FindGameObjectWithTag("Enemy").transform.position.y;
 
-        if (playerPositionX > enemyPositionX && playerPositionY > enemyPositionY) {
-            int generateRandom = randomNumber.Next(1, 3);
-            if (generateRandom == 1) //if random number is one AND the tile is free?
-            {
-                nextPos.y += 1f;
-            }
-            else if (generateRandom == 2) //if random number is two AND the tile is free?
-            {
-                nextPos.x += 1f;
-            }
+        float moveX = 0;
+        float moveY = 0;
+
+        if (playerPositionX > enemyPositionX)
+        {
+            moveX = 1;
         }
-        else if(playerPositionX > enemyPositionX && playerPositionY < enemyPositionY) {
-            int generateRandom = randomNumber.Next(2, 4);
-            if (generateRandom == 2)
-            {
-                nextPos.x += 1f;
-            }
-            else if (generateRandom == 3)
-            {
-                nextPos.y -= 1f;
-            }
+        else
+        {
+            moveX = -1;
         }
-        else if (playerPositionX < enemyPositionX && playerPositionY < enemyPositionY) {
-            int generateRandom = randomNumber.Next(3, 5);
-            if (generateRandom == 3)
-            {
-                nextPos.y -= 1f;
-            }
-            else if (generateRandom == 4)
-            {
-                nextPos.x -= 1f;
-            }
+        if (playerPositionY > enemyPositionY)
+        {
+            moveY = 1;
         }
-        else {
-            int generateRandom = randomNumber.Next(4, 6);
-            if (generateRandom == 4)
-            {
-                nextPos.x -= 1f;
-            }
-            else if (generateRandom == 5)
-            {
-                nextPos.y += 1f;
-            }
+        else
+        {
+            moveY = -1;
         }
 
-        moveTimer += Time.deltaTime;
-        if(moveTimer >= 0.2f)
+        int generateRandom = randomNumber.Next(1, 3);
+        if(generateRandom == 1)
         {
-            transform.position = nextPos;
+            nextPos.x += moveX;
+        }
+        else
+        {
+            nextPos.y += moveY;
+        }
+        moveTimer += Time.deltaTime;
+        if(moveTimer >= 0.5f)
+        {
+            Detection();
             moveTimer = 0;
+        }
+    }
+
+    void checkHit(RaycastHit2D hit) {
+
+        if (hit.collider != null)
+        {
+            Debug.Log(hit.transform.tag);
+            if (hit.transform.tag == "Player")
+            {
+                transform.position += nextPos;
+            }
+        }
+        else
+        {
+            transform.position += nextPos;
+            Debug.Log("yey");
         }
     }
 
     void Detection() {
 
-        hit = Physics2D.Raycast(transform.position, Vector3.up, 1f);
-        Debug.DrawRay(transform.position, Vector3.up, Color.green, 1, false);
-        hit = Physics2D.Raycast(transform.position, Vector3.right, 1f);
-        Debug.DrawRay(transform.position, Vector3.right, Color.green, 1, false);
-        hit = Physics2D.Raycast(transform.position, Vector3.down, 1f);
-        Debug.DrawRay(transform.position, Vector3.down, Color.green, 1, false);
-        hit = Physics2D.Raycast(transform.position, Vector3.left, 1f);
-        Debug.DrawRay(transform.position, Vector3.left, Color.green, 1, false);
+        hit = Physics2D.Raycast(transform.position, nextPos, 1f, ~LayerMask.GetMask("Enemy"));
+        Debug.DrawRay(transform.position, nextPos, Color.green, 1, false);
 
-        if (hit.collider != null)
-        {
-            if (hit.transform.tag == "Tilemap")
-            {
-               Debug.Log("Tile");
-            } 
-            else if (hit.transform.tag == "Boulder")
-            {
-                Debug.Log("Boulder");
-            }
-            else if (hit.transform.tag == "Player")
-            {
-                Debug.Log("Player");
-            }
-            else if (hit.transform.tag == "block")
-            {
-                Debug.Log("Block");
-            }
-            else if (hit.transform.tag == "Gem")
-            {
-                Debug.Log("Gem");
-            }
-        }
-        else
-        {
-            transform.position = nextPos;
-        }
-
-
+        checkHit(hit);
     }
 }
