@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1911,7 +1911,7 @@ RectTransform:
   m_GameObject: {fileID: 756202450}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.4022309, y: 1.1031154, z: 1.0007}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 765523051}
   m_Father: {fileID: 1628731452}
@@ -1919,8 +1919,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -32, y: -138.47}
-  m_SizeDelta: {x: 179.7181, y: 61.1428}
+  m_AnchoredPosition: {x: 257, y: -50.1}
+  m_SizeDelta: {x: 253, y: 68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &756202452
 MonoBehaviour:
@@ -2055,15 +2055,15 @@ RectTransform:
   m_GameObject: {fileID: 765523050}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.8731313, y: 2.4363723, z: 0.9993005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 756202451}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.48999023, y: 0.21647644}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -8.9578, y: 2.2395}
+  m_SizeDelta: {x: 300, y: 112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &765523052
 MonoBehaviour:
@@ -2079,13 +2079,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: e6aa84168b69cd542bf7f773d858ff03, type: 3}
+  m_Texture: {fileID: 2800000, guid: 0fbe37bdd1930874c958b80bc91676be, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -5728,7 +5728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
