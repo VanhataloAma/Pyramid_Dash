@@ -19,25 +19,27 @@ namespace GA.Pyramid_dash {
         void FixedUpdate() {
             charaPosition = character.transform.position;
 
-            if (transform.position.x - charaPosition.x > 9f) {
-                MoveX = -0.5f;
-            } else if (transform.position.x - charaPosition.x < -9f) {
-                MoveX = 0.5f;
+            if (transform.position.x - charaPosition.x > 8f) {
+                MoveX = -0.17f;
+            } else if (transform.position.x - charaPosition.x < -8f) {
+                MoveX = 0.17f;
             }
 
-            if (transform.position.y - charaPosition.y > 4.5f) {
-                MoveY = -0.25f;
-            } else if (transform.position.y - charaPosition.y < -4.5f) {
-                MoveY = 0.25f;
+            if (transform.position.y - charaPosition.y > 2.5f) {
+                MoveY = -0.06f;
+            } else if (transform.position.y - charaPosition.y < -2.5f) {
+                MoveY = 0.06f;
             }
 
             transform.position += new Vector3(MoveX, MoveY, 0);
+            transform.position += new Vector3(MoveX, MoveY, 0);
+            transform.position += new Vector3(MoveX, MoveY, 0);
 
-            if ((int)transform.position.y == (int)charaPosition.y) {
+            if (Mathf.Abs(transform.position.y - charaPosition.y) <= 0.5f) {
                 MoveY = 0f;
             }
 
-            if ((int)transform.position.x == (int)charaPosition.x) {
+            if (Mathf.Abs(transform.position.x - charaPosition.x) <= 1f) {
                 MoveX = 0f;
             }
         }
