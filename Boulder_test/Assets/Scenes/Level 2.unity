@@ -821,6 +821,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 684274746}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
+      propertyPath: gemValue
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: requiredGems
       value: 12
       objectReference: {fileID: 0}
