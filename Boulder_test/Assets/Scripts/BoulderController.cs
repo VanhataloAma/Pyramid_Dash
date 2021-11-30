@@ -123,6 +123,10 @@ namespace GA.Pyramid_dash {
             if (col.transform.tag == "Player" && falling) {
                 hit.collider.gameObject.GetComponent<CharController>().GameOver();
             }
+            /*if (col.transform.tag == "Enemy" && falling)
+            {
+                Destroy(GameObject.FindWithTag("Enemy"));
+            }*/
         }
 
         public bool Pushed(Vector3 pushDirection) {
