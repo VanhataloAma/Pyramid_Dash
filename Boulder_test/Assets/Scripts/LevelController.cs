@@ -65,7 +65,7 @@ namespace GA.Pyramid_dash {
             }
         }
 
-        void TogglePause() {
+        public void TogglePause() {
             if (!paused) {
                 var SceneLoad = SceneManager.LoadSceneAsync("PauseMenu", LoadSceneMode.Additive);
                 SceneLoad.completed += (s) => {

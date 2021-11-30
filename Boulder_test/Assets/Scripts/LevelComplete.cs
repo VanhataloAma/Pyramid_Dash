@@ -20,8 +20,8 @@ namespace GA.Pyramid_dash {
         GameManager gm;
         // Start is called before the first frame update
         void Start() {
-            gemsText.text = "Gems: " + LevelController.levelScore;
-            timeText.text = "Time: " + (int)LevelController.timeLeft;
+            gemsText.text = "Gem Score: " + LevelController.levelScore;
+            timeText.text = "Time Score: " + (int)LevelController.timeLeft;
             totalText.text = "Total Score: " + (LevelController.levelScore + (int)LevelController.timeLeft);
             gm.AddScore((LevelController.levelScore + (int)LevelController.timeLeft));
         }

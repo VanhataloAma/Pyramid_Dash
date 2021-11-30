@@ -10462,6 +10462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Portal
       objectReference: {fileID: 0}
+    - target: {fileID: 5805282690857221517, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
 --- !u!114 &942789033 stripped
@@ -11882,6 +11886,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 427583010896342518, guid: fc24ae0c41388b746861cd380d5973e1, type: 3}
   m_PrefabInstance: {fileID: 1808979041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1339030826 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6146051850800918709, guid: 803740abcf569d644b0a6600e380acd9, type: 3}
+  m_PrefabInstance: {fileID: 684189572}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1339030830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1339030826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47f5e9af6e0af7d45ad4135aea24fac0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 645232572}
 --- !u!4 &1351312488 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 427583010896342518, guid: fc24ae0c41388b746861cd380d5973e1, type: 3}
@@ -14728,7 +14750,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0.16119999, z: 0}
   m_MaxChunkCount: 16
