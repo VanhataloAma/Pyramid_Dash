@@ -77,6 +77,10 @@ namespace GA.Pyramid_dash {
                 } else {
                     boulder_Animator.SetBool("Collapsing", false);
                 }
+
+                if (hit.transform.tag == "Enemy") {
+                    fall_Timer += Time.deltaTime;
+                }
                 
             }  else {
                 fall_Timer += Time.deltaTime;
@@ -123,10 +127,10 @@ namespace GA.Pyramid_dash {
             if (col.transform.tag == "Player" && falling) {
                 hit.collider.gameObject.GetComponent<CharController>().GameOver();
             }
-            /*if (col.transform.tag == "Enemy" && falling)
+            if (col.transform.tag == "Enemy" && falling)
             {
-                Destroy(GameObject.FindWithTag("Enemy"));
-            }*/
+                Destroy(col.gameObject);
+            }
         }
 
         public bool Pushed(Vector3 pushDirection) {
