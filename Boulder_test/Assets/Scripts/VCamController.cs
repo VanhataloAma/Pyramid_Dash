@@ -43,7 +43,7 @@ namespace GA.Pyramid_dash {
                 MoveX = false;
             }
 
-            Debug.Log(Mathf.Abs(cameraPosition.x - characterPosition.x));
+            //Debug.Log(Mathf.Abs(cameraPosition.x - characterPosition.x));
 
             if (MoveY) {
                 framingTransposer.m_DeadZoneHeight = 0f;

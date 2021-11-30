@@ -78,9 +78,9 @@ namespace GA.Pyramid_dash {
                     boulder_Animator.SetBool("Collapsing", false);
                 }
 
-                if (hit.transform.tag == "Enemy") {
+                /*if (hit.transform.tag == "Enemy") {
                     fall_Timer += Time.deltaTime;
-                }
+                }*/
                 
             }  else {
                 fall_Timer += Time.deltaTime;
