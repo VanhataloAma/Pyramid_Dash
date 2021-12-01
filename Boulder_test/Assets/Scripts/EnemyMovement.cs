@@ -69,7 +69,7 @@ public class EnemyMovement : MonoBehaviour {
 
         if (hit.collider != null)
         {
-            Debug.Log(hit.transform.tag);
+            //Debug.Log(hit.transform.tag);
             if (hit.transform.tag == "Player")
             {
                 transform.position += nextPos;
@@ -78,7 +78,7 @@ public class EnemyMovement : MonoBehaviour {
         else
         {
             transform.position += nextPos;
-            Debug.Log("yey");
+            //Debug.Log("yey");
         }
     }
 
