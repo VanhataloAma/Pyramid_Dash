@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using GA.Pyramid_dash;
+using UnityEngine.SceneManagement;
 
 namespace GA.Pyramid_dash {
 
@@ -30,10 +31,8 @@ namespace GA.Pyramid_dash {
             }
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
+        public void BackToMenu() {
+            SceneManager.LoadScene("Menu");
         }
     }
 }
