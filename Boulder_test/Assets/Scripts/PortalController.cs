@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace GA.Pyramid_dash
-{
-    public class PortalController : MonoBehaviour
-    {
+namespace GA.Pyramid_dash {
+    public class PortalController : MonoBehaviour {
         [SerializeField]
         bool active = false;
 
@@ -21,14 +19,16 @@ namespace GA.Pyramid_dash
         [SerializeField]
         Sprite activatedSprite;
 
+        [SerializeField]
+        LevelLoader loader;
+
         SpriteRenderer srenderer;
 
         private Animator anim;
         private AudioSource audi;
 
         // Start is called before the first frame update
-        void Start()
-        {
+        void Start() {
             portalCollider = GetComponent<Collider2D>();
             srenderer = GetComponent<SpriteRenderer>();
             anim = GetComponent<Animator>();
@@ -36,10 +36,9 @@ namespace GA.Pyramid_dash
         }
 
         // Update is called once per frame
-        void Update()
-        {
+        void Update() {
             if (portalCollider.bounds.Intersects(playerCollider.bounds) && active) {
-                SceneManager.LoadScene("LevelComplete");
+                StartCoroutine(loader.LoadLevel("LevelComplete"));
             }
         }
 
@@ -53,5 +52,6 @@ namespace GA.Pyramid_dash
         public bool IsActive() {
             return active;
         }
+
     }
 }

@@ -18,6 +18,9 @@ namespace GA.Pyramid_dash {
 
         [SerializeField]
         GameManager gm;
+
+        [SerializeField]
+        LevelLoader loader;
         // Start is called before the first frame update
         void Start() {
             gemsText.text = "Gem Score: " + LevelController.levelScore;
@@ -27,11 +30,11 @@ namespace GA.Pyramid_dash {
         }
 
         public void Continue() {
-            SceneManager.LoadScene(LevelController.nextLevel);
+            StartCoroutine(loader.LoadLevel(LevelController.nextLevel));
         }
 
         public void QuitGame() {
-            SceneManager.LoadScene("Menu");
+            StartCoroutine(loader.LoadLevel("Menu"));
         }
 
     }
