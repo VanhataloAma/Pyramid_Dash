@@ -33,6 +33,7 @@ namespace GA.Pyramid_dash {
             srenderer = GetComponent<SpriteRenderer>();
             anim = GetComponent<Animator>();
             audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
         }
 
         // Update is called once per frame

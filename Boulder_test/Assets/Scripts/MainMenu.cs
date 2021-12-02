@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using GA.Pyramid_dash;
 
 namespace GA.Pyramid_dash
@@ -10,6 +11,17 @@ namespace GA.Pyramid_dash
     {
         [SerializeField]
         GameManager gm;
+
+        [SerializeField]
+        Slider effectSlider;
+
+        [SerializeField]
+        Slider musicSlider;
+
+        void Start() {
+            effectSlider.value = PlayerPrefs.GetFloat("EffectVolume");
+            musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+        }
 
         public void PlayGame ()
         {
@@ -25,6 +37,14 @@ namespace GA.Pyramid_dash
 
         public void LevelSelect(string level_Name) {
             SceneManager.LoadScene(level_Name);
+        }
+
+        public void ChangeEffectVolume() {
+            gm.SetEffectVolume(effectSlider.value);
+        }
+
+        public void ChangeMusicVolume() {
+            gm.SetMusicVolume(musicSlider.value);
         }
 
     }

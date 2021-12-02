@@ -40,5 +40,9 @@ namespace GA.Pyramid_dash {
         public void SetEffectVolume(float volume) {
             PlayerPrefs.SetFloat("EffectVolume", volume);
         }
+
+        public void SetMusicVolume(float volume) {
+            PlayerPrefs.SetFloat("MusicVolume", volume);
+        }
     }
 }

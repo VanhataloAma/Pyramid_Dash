@@ -90,5 +90,9 @@ namespace GA.Pyramid_dash {
             ui.SetScore(levelScore);
             ui.SetGems(gemsCollected, requiredGems);
         }
+
+        public bool isPaused() {
+            return paused;
+        }
     }
 }
