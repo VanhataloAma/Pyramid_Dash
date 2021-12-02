@@ -36,5 +36,9 @@ namespace GA.Pyramid_dash {
             Debug.Log(playerName);
             SceneManager.LoadScene("Menu");
         }
+
+        public void SetEffectVolume(float volume) {
+            PlayerPrefs.SetFloat("EffectVolume", volume);
+        }
     }
 }
