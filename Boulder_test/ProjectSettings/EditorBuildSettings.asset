@@ -71,4 +71,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LevelComplete.unity
     guid: 6017a8d8becea4b41a227c6ac8c1bb4f
+  - enabled: 1
+    path: Assets/Scenes/Transition_Test_Scene_1.unity
+    guid: ed85545e9e62f8a489344fad454172cc
+  - enabled: 1
+    path: Assets/Scenes/Transition_Test_Scene_2.unity
+    guid: 7608f4b0346373e48bdce4bcd4a82827
   m_configObjects: {}
