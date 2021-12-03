@@ -10,9 +10,6 @@ public class EnemyMovement : MonoBehaviour {
     float moveTimer;
     RaycastHit2D hit;
 
-    [SerializeField]
-    Tilemap tilemap;
-
     void FixedUpdate(){
         MovementEnemy();
         nextPos = new Vector3(0, 0, 0);
@@ -83,7 +80,7 @@ public class EnemyMovement : MonoBehaviour {
     }
 
     void Detection() {
-
+        //Debug.Log(nextPos);
         hit = Physics2D.Raycast(transform.position, nextPos, 1f, ~LayerMask.GetMask("Enemy"));
         Debug.DrawRay(transform.position, nextPos, Color.green, 1, false);
 
