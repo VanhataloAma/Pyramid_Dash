@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GOTransition
+  m_Controller: {fileID: 9100000, guid: 3164dedbb056f1b468d109e1db3c73f2, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 0770c96af091ce442b154c82f176acaa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 545743c28cc5ddf4bac86c3f28f6a391, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 05d2ac66fb8044a439922b5f86bce3e9, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 092219400ccc0f347b7f114085524f23, type: 2}
