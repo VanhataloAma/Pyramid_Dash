@@ -75,6 +75,12 @@ EditorBuildSettings:
     path: Assets/Scenes/BD5.unity
     guid: 55726450564754c449ecb8693ff2a00d
   - enabled: 1
+    path: Assets/Scenes/Level 18.unity
+    guid: daa93bbaa39649a49a05b118bad1ce8c
+  - enabled: 1
+    path: Assets/Scenes/Level 19.unity
+    guid: d5b11ecc629b76e4d890c3a025d0eb23
+  - enabled: 1
     path: Assets/Scenes/HighScore.unity
     guid: 42cb1ec03c8217f47a546a5e4a002923
   - enabled: 1
@@ -86,4 +92,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transition_Test_Scene_2.unity
     guid: 7608f4b0346373e48bdce4bcd4a82827
+  - enabled: 1
+    path: Assets/Scenes/Level 20.unity
+    guid: f941a8e1a15d8da4fb7fc1b7fc17db2e
   m_configObjects: {}

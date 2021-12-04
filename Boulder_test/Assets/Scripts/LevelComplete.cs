@@ -30,11 +30,11 @@ namespace GA.Pyramid_dash {
         }
 
         public void Continue() {
-            StartCoroutine(loader.LoadLevel(LevelController.nextLevel));
+            StartCoroutine(loader.LoadLevel(LevelController.nextLevel, 1f));
         }
 
         public void QuitGame() {
-            StartCoroutine(loader.LoadLevel("Menu"));
+            StartCoroutine(loader.LoadLevel("Menu", 1f));
         }
 
     }

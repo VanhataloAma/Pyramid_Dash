@@ -11,22 +11,27 @@ public class EnemyMovement : MonoBehaviour {
         
         float moveTimer;
 
+        float noiseTimer;
+
         RaycastHit2D hit;
 
         Vector3 playerPos;
 
-        float distanceFromPlayer;
+        float distanceFromPlayer = 100;
 
         bool moved;
 
         Vector3[] directions = new Vector3[4];
 
+        AudioSource audi;
 
         void Start() {
             directions[0] = Vector3.left;
             directions[1] = Vector3.up;
             directions[2] = Vector3.down;
             directions[3] = Vector3.right;
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
         }
 
         void FixedUpdate(){
@@ -34,6 +39,13 @@ public class EnemyMovement : MonoBehaviour {
             if (moveTimer >= 0.6f) {
                 MovementEnemy();
                 moveTimer = 0f;
+            }
+
+            noiseTimer += Time.deltaTime;
+            Debug.Log(distanceFromPlayer);
+            if (noiseTimer >= 3f && distanceFromPlayer < 15f) {
+                audi.Play(0);
+                noiseTimer = 0f;
             }
             nextPos = new Vector3(0, 0, 0);
         }
@@ -58,7 +70,7 @@ public class EnemyMovement : MonoBehaviour {
 
         void checkDirection(Vector3 dir) {
             if (IsEmpty(dir) && !moved || IsEmpty(dir) && Vector3.Distance(transform.position + dir, playerPos) < distanceFromPlayer) {
-                Debug.Log("Direction : " + dir + "Distance: " + Vector3.Distance(transform.position + dir, playerPos));
+                //Debug.Log("Direction : " + dir + "Distance: " + Vector3.Distance(transform.position + dir, playerPos));
                 moved = true;
                 distanceFromPlayer = Vector3.Distance(transform.position + dir, playerPos);
                 nextPos = dir;
@@ -82,6 +94,12 @@ public class EnemyMovement : MonoBehaviour {
             }
 
             return empty;
+        }
+
+        void OnCollisionEnter2D(Collision2D col) {
+            if (col.transform.tag == "Player") {
+                col.gameObject.GetComponent<CharController>().GameOver();
+            }
         }
     }
 }

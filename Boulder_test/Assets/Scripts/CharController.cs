@@ -12,6 +12,11 @@ namespace GA.Pyramid_dash {
         Tilemap tilemap;
 
         AudioSource audioData;
+
+        public AudioClip digging_Sfx;
+        public AudioClip death_Sfx;
+
+        public AudioClip gem_Sfx;
         Animator animator;
 
         Vector3 nextPosition;
@@ -37,6 +42,7 @@ namespace GA.Pyramid_dash {
         // Start is called before the first frame update
         void Start() {
             audioData = GetComponent<AudioSource>();
+            audioData.volume = PlayerPrefs.GetFloat("EffectVolume");
             animator = GetComponent<Animator>();
         }
 
@@ -91,6 +97,7 @@ namespace GA.Pyramid_dash {
                     tilemap.SetTile(Vector3Int.FloorToInt(targetPosition), null);
                     transform.position = targetPosition;
                     GameObject Tile_Animation_Instance = Instantiate(Tile_Animation_Prefab, transform.position, Quaternion.identity);
+                    audioData.PlayOneShot(digging_Sfx);
 
                 } else if (hit.transform.tag == "Boulder" && horizontal) {
                     pushPosition = hit.transform.position - transform.position;
@@ -101,6 +108,7 @@ namespace GA.Pyramid_dash {
                     Destroy(hit.transform.gameObject);
                     lC.AddScore();
                     transform.position = targetPosition;
+                    audioData.PlayOneShot(gem_Sfx);
 
                 } else if (hit.transform.tag == "Portal") {
                     if (hit.collider.gameObject.GetComponent<PortalController>().IsActive()) {
@@ -113,6 +121,19 @@ namespace GA.Pyramid_dash {
         }
 
         public void GameOver() {
+            audioData.PlayOneShot(death_Sfx);
+            Time.timeScale = 0f;
+            StartCoroutine(Pause(2));
+            
+        }
+
+        private IEnumerator Pause(int p) {
+            Time.timeScale = 0.1f;
+            float pauseEndTime = Time.realtimeSinceStartup + p;
+            while (Time.realtimeSinceStartup < pauseEndTime) {
+                yield return 0;
+            }
+            Time.timeScale = 1f;
             SceneManager.LoadScene("GameOver");
         }
     }

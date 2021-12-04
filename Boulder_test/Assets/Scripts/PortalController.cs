@@ -33,13 +33,13 @@ namespace GA.Pyramid_dash {
             srenderer = GetComponent<SpriteRenderer>();
             anim = GetComponent<Animator>();
             audi = GetComponent<AudioSource>();
-            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume") / 2;
         }
 
         // Update is called once per frame
         void Update() {
             if (portalCollider.bounds.Intersects(playerCollider.bounds) && active) {
-                StartCoroutine(loader.LoadLevel("LevelComplete"));
+                StartCoroutine(loader.LoadLevel("LevelComplete", 1f));
             }
         }
 

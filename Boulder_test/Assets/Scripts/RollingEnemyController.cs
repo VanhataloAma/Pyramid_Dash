@@ -9,7 +9,11 @@ namespace GA.Pyramid_dash {
 
         float moveTimer;
 
+        float noiseTimer;
+
         RaycastHit2D hit;
+
+        AudioSource audi;
 
         Vector3[] directions = new Vector3[4];
 
@@ -19,6 +23,9 @@ namespace GA.Pyramid_dash {
             directions[1] = Vector3.up;
             directions[2] = Vector3.down;
             directions[3] = Vector3.right;
+
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
         }
 
         // Update is called once per frame
@@ -27,6 +34,13 @@ namespace GA.Pyramid_dash {
             if (moveTimer >= 0.6f) {
                 Move();
                 moveTimer = 0f;
+            }
+
+            Debug.Log(Vector3.Distance(transform.position, GameObject.Find("character").transform.position));
+            if (Vector3.Distance(transform.position, GameObject.Find("character").transform.position) < 7f) {
+                audi.UnPause();
+            } else {
+                audi.Pause();
             }
             
         }
@@ -107,6 +121,12 @@ namespace GA.Pyramid_dash {
             }
 
             return empty;
+        }
+
+        void OnCollisionEnter2D(Collision2D col) {
+            if (col.transform.tag == "Player") {
+                col.gameObject.GetComponent<CharController>().GameOver();
+            }
         }
 
     }

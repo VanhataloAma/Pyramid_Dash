@@ -20,17 +20,18 @@ namespace GA.Pyramid_dash {
         Vector3 raycast_Start_Right;
 
         float fall_Timer;
-        bool falling;
+        int falling;
 
         Animator boulder_Animator;
-        float boulder_Animation_Timer;
-        float boulder_Animation_Interval;
+
+        AudioSource audi;
         
         // Start is called before the first frame update
         void Start() {
             nextPosition = transform.position - new Vector3(0, 1, 0);
             boulder_Animator = GetComponent<Animator>();
-            boulder_Animation_Interval = 2f + Random.Range(0f, 2f);
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
         }
 
         // Update is called once per frame
@@ -55,18 +56,24 @@ namespace GA.Pyramid_dash {
             hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(0, -1, 0), 0.6f);
             Debug.DrawRay(raycast_Start_Down, nextPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
+                if (falling >= 2) {
+                    audi.Play(0);
+                }
                 if (hit.transform.tag == "Player") {
-                    if (!falling) {
+                    if (falling == 0) {
                         fall_Timer = 0.2f;
                     } else {
                         fall_Timer += Time.deltaTime;
                     }
 
-                } else {
-                    falling = false;
+                } else if (falling >= 1) {
+                    falling = 0;
+
+                } else if (hit.transform.tag == "Enemy") {
+                    fall_Timer += Time.deltaTime;
                 }
 
-                if (hit.transform.tag == "Boulder" && !falling) {
+                if (hit.transform.tag == "Boulder" && falling == 0) {
                     collapsePosition = Collapse();
                     boulder_Animator.SetBool("Collapsing", true);
                     if (collapsePosition != transform.position) {
@@ -78,16 +85,13 @@ namespace GA.Pyramid_dash {
                     boulder_Animator.SetBool("Collapsing", false);
                 }
 
-                /*if (hit.transform.tag == "Enemy") {
-                    fall_Timer += Time.deltaTime;
-                }*/
                 
             }  else {
                 fall_Timer += Time.deltaTime;
             }
 
             if (fall_Timer >= 0.25f) {
-                falling = true;
+                falling++;
                 transform.position = nextPosition;
                 MoveCheck_Instance = Instantiate(MoveCheck_Prefab, transform.position, Quaternion.identity);
                 fall_Timer = 0;
@@ -124,10 +128,10 @@ namespace GA.Pyramid_dash {
         }
 
         void OnCollisionEnter2D(Collision2D col) {
-            if (col.transform.tag == "Player" && falling) {
+            if (col.transform.tag == "Player" && falling >= 0) {
                 hit.collider.gameObject.GetComponent<CharController>().GameOver();
             }
-            if (col.transform.tag == "Enemy" && falling)
+            if (col.transform.tag == "Enemy" && falling >= 0)
             {
                 Destroy(col.gameObject);
             }
