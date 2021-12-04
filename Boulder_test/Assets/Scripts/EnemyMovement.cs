@@ -5,85 +5,83 @@ using UnityEngine.Tilemaps;
 using System;
 using GA.Pyramid_dash;
 
+namespace GA.Pyramid_dash {
 public class EnemyMovement : MonoBehaviour {
-    private Vector3 nextPos;
-    float moveTimer;
-    RaycastHit2D hit;
+        private Vector3 nextPos;
+        
+        float moveTimer;
 
-    void FixedUpdate(){
-        MovementEnemy();
-        nextPos = new Vector3(0, 0, 0);
-    }
+        RaycastHit2D hit;
 
-    void MovementEnemy() {
+        Vector3 playerPos;
 
-        System.Random randomNumber = new System.Random();
+        float distanceFromPlayer;
 
-        float playerPositionX = GameObject.FindGameObjectWithTag("Player").transform.position.x;
-        float playerPositionY = GameObject.FindGameObjectWithTag("Player").transform.position.y;
+        bool moved;
 
-        float enemyPositionX = GameObject.FindGameObjectWithTag("Enemy").transform.position.x;
-        float enemyPositionY = GameObject.FindGameObjectWithTag("Enemy").transform.position.y;
+        Vector3[] directions = new Vector3[4];
 
-        float moveX = 0;
-        float moveY = 0;
 
-        if (playerPositionX > enemyPositionX)
-        {
-            moveX = 1;
-        }
-        else
-        {
-            moveX = -1;
-        }
-        if (playerPositionY > enemyPositionY)
-        {
-            moveY = 1;
-        }
-        else
-        {
-            moveY = -1;
+        void Start() {
+            directions[0] = Vector3.left;
+            directions[1] = Vector3.up;
+            directions[2] = Vector3.down;
+            directions[3] = Vector3.right;
         }
 
-        int generateRandom = randomNumber.Next(1, 3);
-        if(generateRandom == 1)
-        {
-            nextPos.x += moveX;
+        void FixedUpdate(){
+            moveTimer += Time.deltaTime;
+            if (moveTimer >= 0.6f) {
+                MovementEnemy();
+                moveTimer = 0f;
+            }
+            nextPos = new Vector3(0, 0, 0);
         }
-        else
-        {
-            nextPos.y += moveY;
-        }
-        moveTimer += Time.deltaTime;
-        if(moveTimer >= 0.5f)
-        {
-            Detection();
-            moveTimer = 0;
-        }
-    }
 
-    void checkHit(RaycastHit2D hit) {
+        void MovementEnemy() {
+            moved = false;
 
-        if (hit.collider != null)
-        {
-            //Debug.Log(hit.transform.tag);
-            if (hit.transform.tag == "Player")
-            {
-                transform.position += nextPos;
+            System.Random randomNumber = new System.Random();
+
+            playerPos = GameObject.FindGameObjectWithTag("Player").transform.position;
+            distanceFromPlayer = Vector3.Distance(transform.position, playerPos);
+
+            int rand = randomNumber.Next(0, 4);
+            for (int i = 0; i < directions.Length; i++) {
+                int index = (i + rand) % directions.Length;
+                checkDirection(directions[index]);
+            }
+
+
+            transform.position += nextPos;
+        }
+
+        void checkDirection(Vector3 dir) {
+            if (IsEmpty(dir) && !moved || IsEmpty(dir) && Vector3.Distance(transform.position + dir, playerPos) < distanceFromPlayer) {
+                Debug.Log("Direction : " + dir + "Distance: " + Vector3.Distance(transform.position + dir, playerPos));
+                moved = true;
+                distanceFromPlayer = Vector3.Distance(transform.position + dir, playerPos);
+                nextPos = dir;
             }
         }
-        else
-        {
-            transform.position += nextPos;
-            //Debug.Log("yey");
+
+        bool IsEmpty(Vector3 target) {
+            bool empty;
+
+            hit = Physics2D.Raycast(transform.position, target, 1f, ~LayerMask.GetMask("Enemy", "Ignore Raycast"));
+            Debug.DrawRay(transform.position, target, Color.green, 2, false);
+
+            if (hit.collider != null) {
+                if (hit.transform.tag == "Player") {
+                    empty = true;
+                } else {
+                    empty = false;
+                }
+            } else {
+                empty = true;
+            }
+
+            return empty;
         }
-    }
-
-    void Detection() {
-        //Debug.Log(nextPos);
-        hit = Physics2D.Raycast(transform.position, nextPos, 1f, ~LayerMask.GetMask("Enemy"));
-        Debug.DrawRay(transform.position, nextPos, Color.green, 1, false);
-
-        checkHit(hit);
     }
 }

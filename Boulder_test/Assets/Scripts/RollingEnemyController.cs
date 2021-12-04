@@ -13,10 +13,6 @@ namespace GA.Pyramid_dash {
 
         Vector3[] directions = new Vector3[4];
 
-        int directionIndex = 0;
-        int lastdirectionIndex = 0;
-
-
         // Start is called before the first frame update
         void Start() {
             directions[0] = Vector3.left;
@@ -35,16 +31,6 @@ namespace GA.Pyramid_dash {
             
         }
 
-        void Opposites(Vector3 last) {
-            for (int i = 0; i < directions.Length; i++) {
-                if (directions[i] == last) {
-                    Vector3 temp = directions[3];
-                    directions[3] = last;
-                    directions[i] = temp;
-                }
-            }
-        }
-        
         void Move() {
             nextPos = Vector3.zero;
             if (IsEmpty(directions[0])) {
@@ -89,56 +75,25 @@ namespace GA.Pyramid_dash {
             } else if (directions[0] == Vector3.left) {
                 transform.eulerAngles = new Vector3(0, 0, 0);
             }
- 
-            //Debug.Log("Directions 2: " + directions[0] + " | " + directions[1] + " | " + directions[2] + " | " + directions[3]);
-            /*if (!IsEmpty(directions[directionIndex])) {
-                temp = lastdirectionIndex;
-            } else {
-                temp = directionIndex;
-            }
-            
-            for (int i = 0; i < directions.Length; i++) {
-                int pointer = (i + temp) % directions.Length;
-                //Debug.Log("Pointer: " + pointer);
-                //Debug.Log("Last: " + lastdirectionIndex);
 
-                if (IsEmpty(directions[pointer])) {
-                    nextPos = directions[pointer];
-                    
-                    if (directionIndex != pointer) {
-                        lastdirectionIndex = directionIndex;
-                    }
-                    
-                    directionIndex = pointer;
-                    //Debug.Log("Index" + directionIndex);
-                    if (pointer == 3) {
-                        transform.eulerAngles = new Vector3(0, 180, 0);
-
-                    } else if (pointer == 1) {
-                        transform.eulerAngles = new Vector3(0, 0, 0);
-                    }
-                    break;
-                } else {
-                    if (pointer == 0 || pointer == 2) {
-                        temp = directions[0];
-                        directions[0] = directions[2];
-                        directions[2] = temp;
-                    } else {
-                        temp = directions[1];
-                        directions[1] = directions[3];
-                        directions[3] = temp;
-                    }
-                }
-
-            }*/
 
             transform.position += nextPos;
+        }
+
+        void Opposites(Vector3 last) {
+            for (int i = 0; i < directions.Length; i++) {
+                if (directions[i] == last) {
+                    Vector3 temp = directions[3];
+                    directions[3] = last;
+                    directions[i] = temp;
+                }
+            }
         }
 
         bool IsEmpty(Vector3 target) {
             bool empty;
 
-            hit = Physics2D.Raycast(transform.position, target, 1f, ~LayerMask.GetMask("Enemy"));
+            hit = Physics2D.Raycast(transform.position, target, 1f, ~LayerMask.GetMask("Enemy", "Ignore Raycast"));
             Debug.DrawRay(transform.position, target, Color.green, 2, false);
 
             if (hit.collider != null) {
@@ -152,16 +107,6 @@ namespace GA.Pyramid_dash {
             }
 
             return empty;
-        }
-
-        int CycleInt(int subject, int min, int max) {
-            if (subject > max) {
-                subject = min;
-            } else if (subject < min) {
-                subject = max;
-            }
-
-            return subject;
         }
 
     }
