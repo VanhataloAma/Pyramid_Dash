@@ -9,7 +9,11 @@ namespace GA.Pyramid_dash {
         RaycastHit2D hit;
 
         [SerializeField]
+        GameObject Gem_Prefab;
+
+        [SerializeField]
         GameObject MoveCheck_Prefab;
+
         GameObject MoveCheck_Instance;
 
         Vector3 nextPosition;
@@ -135,6 +139,9 @@ namespace GA.Pyramid_dash {
             if (col.transform.tag == "Enemy" && falling >= 0)
             {
                 Destroy(col.gameObject);
+                GameObject Gem_Instance = Instantiate(Gem_Prefab, transform.position, Quaternion.identity);
+                Destroy(MoveCheck_Instance);
+                Destroy(gameObject);
             }
         }
 

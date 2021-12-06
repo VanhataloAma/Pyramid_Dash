@@ -132,18 +132,16 @@ namespace GA.Pyramid_dash {
         public void GameOver() {
             audioData.PlayOneShot(death_Sfx);
             gameOver.SetActive(true);
-            //Time.fixedDeltaTime = 0f;
             StartCoroutine(Pause(2));
-            
         }
 
         private IEnumerator Pause(int p) {
-            Time.fixedDeltaTime = 0f;
+            //Time.timeScale = 0.1f;
             float pauseEndTime = Time.realtimeSinceStartup + p;
             while (Time.realtimeSinceStartup < pauseEndTime) {
                 yield return 0;
             }
-            Time.fixedDeltaTime = 0.02f;
+            Time.timeScale = 1f;
             SceneManager.LoadScene("GameOver");
         }
     }

@@ -1689,6 +1689,11 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &652642502 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6807465102274009125, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+  m_PrefabInstance: {fileID: 795921059}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &725592300
 GameObject:
   m_ObjectHideFlags: 0
@@ -3752,6 +3757,67 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &795921059
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6807465102274009125, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_Name
+      value: GameOverTransition
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009125, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807465102274009146, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
 --- !u!1001 &809292040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8558,6 +8624,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 725592304}
     - target: {fileID: 4532179825954938587, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
+      propertyPath: gameOver
+      value: 
+      objectReference: {fileID: 652642502}
+    - target: {fileID: 4532179825954938587, guid: e563f84a5a84fe842922eae6bfc3c5bd, type: 3}
       propertyPath: Tile_Animation_Prefab
       value: 
       objectReference: {fileID: 7496063136956661067, guid: 11284426b6a85c64fbd4d3dadeb650b4, type: 3}
@@ -9328,7 +9398,7 @@ PrefabInstance:
       objectReference: {fileID: 1117974431}
     - target: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: next_Level
-      value: BD3
+      value: Level 3
       objectReference: {fileID: 0}
     - target: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: playerCollider
