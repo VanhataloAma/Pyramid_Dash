@@ -17,5 +17,14 @@ namespace GA.Pyramid_dash {
 
         }
 
+        public IEnumerator LoadLevel(int LevelIndex, float transitionTime) {
+            transition.SetTrigger("Start");
+
+            yield return new WaitForSeconds(transitionTime);
+
+            SceneManager.LoadScene(LevelIndex);
+
+        }
+
     }
 }

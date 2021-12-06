@@ -32,9 +32,10 @@ public class EnemyMovement : MonoBehaviour {
             directions[3] = Vector3.right;
             audi = GetComponent<AudioSource>();
             audi.volume = PlayerPrefs.GetFloat("EffectVolume");
+            
         }
 
-        void FixedUpdate(){
+        void FixedUpdate() {
             moveTimer += Time.deltaTime;
             if (moveTimer >= 0.6f) {
                 MovementEnemy();
@@ -48,6 +49,7 @@ public class EnemyMovement : MonoBehaviour {
                 noiseTimer = 0f;
             }
             nextPos = new Vector3(0, 0, 0);
+            //Debug.Log(Time.fixedDeltaTime);
         }
 
         void MovementEnemy() {

@@ -71,7 +71,7 @@ namespace GA.Pyramid_dash {
             soundTimer += Time.fixedDeltaTime;
             timeLeft -= Time.fixedDeltaTime;
             ui.SetTimer((int)timeLeft);
-            if (timeLeft <= (timeLimit / 10) && soundTimer >= 1 && timeLeft >= 0) {
+            if (timeLeft <= 10 && soundTimer >= 1 && timeLeft >= 0) {
                 audi.PlayOneShot(ticktock_Sfx);
                 soundTimer = 0f;
             }

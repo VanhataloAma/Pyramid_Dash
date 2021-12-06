@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1b94b478fd56ef4989f3a1da15f2da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Gem_Prefab: {fileID: 2286432076716221833, guid: 6afe6bbf351ca9a4290c38bd615b892f, type: 3}
   MoveCheck_Prefab: {fileID: 4297866987514812840, guid: ec64818e187a8a74481626ce4e249fb0, type: 3}
 --- !u!95 &2612411970903481230
 Animator:
