@@ -42,6 +42,9 @@ namespace GA.Pyramid_dash {
         [SerializeField]
         LevelController lC;
 
+        [SerializeField]
+        GameObject gameOver;
+
         // Start is called before the first frame update
         void Start() {
             audioData = GetComponent<AudioSource>();
@@ -128,18 +131,19 @@ namespace GA.Pyramid_dash {
 
         public void GameOver() {
             audioData.PlayOneShot(death_Sfx);
-            Time.timeScale = 0f;
+            gameOver.SetActive(true);
+            //Time.fixedDeltaTime = 0f;
             StartCoroutine(Pause(2));
             
         }
 
         private IEnumerator Pause(int p) {
-            Time.timeScale = 0.1f;
+            Time.fixedDeltaTime = 0f;
             float pauseEndTime = Time.realtimeSinceStartup + p;
             while (Time.realtimeSinceStartup < pauseEndTime) {
                 yield return 0;
             }
-            Time.timeScale = 1f;
+            Time.fixedDeltaTime = 0.02f;
             SceneManager.LoadScene("GameOver");
         }
     }
