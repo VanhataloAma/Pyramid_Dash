@@ -474,6 +474,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5143274757985519288, guid: 01d2734a99807fa40a07347b030f547d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 23cd39a450377924ab45d83473867230, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01d2734a99807fa40a07347b030f547d, type: 3}
 --- !u!1001 &6807465100509169738
@@ -483,6 +487,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6807465101950927802, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a032491a63be62d4f878da24e347ae67, type: 2}
     - target: {fileID: 6807465102274009125, guid: 5bd241b56b8730243b2c742d7f624c16, type: 3}
       propertyPath: m_Name
       value: GameOverTransition
