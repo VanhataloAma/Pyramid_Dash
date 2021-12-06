@@ -8604,6 +8604,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 827134117}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
+      propertyPath: sandColor
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: timeLimit
       value: 500
       objectReference: {fileID: 0}
@@ -8673,6 +8677,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7496063136956661066, guid: 11284426b6a85c64fbd4d3dadeb650b4, type: 3}
+      propertyPath: m_Animations.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7496063136956661066, guid: 11284426b6a85c64fbd4d3dadeb650b4, type: 3}
+      propertyPath: m_Animations.Array.data[1]
+      value: 
+      objectReference: {fileID: 7400000, guid: dfc1e74e12128ab4392f984d6ea994f4, type: 2}
     - target: {fileID: 7496063136956661067, guid: 11284426b6a85c64fbd4d3dadeb650b4, type: 3}
       propertyPath: m_Name
       value: Sand_poof_spritesheet_2_0

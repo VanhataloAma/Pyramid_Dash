@@ -15,6 +15,8 @@ namespace GA.Pyramid_dash {
 
         public int timeLimit = 150;
 
+        public int sandColor = 0;
+
         public static int levelScore;
 
         public static int current_Level_Index;

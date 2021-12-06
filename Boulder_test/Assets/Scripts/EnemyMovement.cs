@@ -42,7 +42,7 @@ public class EnemyMovement : MonoBehaviour {
             }
 
             noiseTimer += Time.deltaTime;
-            Debug.Log(distanceFromPlayer);
+            //Debug.Log(distanceFromPlayer);
             if (noiseTimer >= 3f && distanceFromPlayer < 15f) {
                 audi.Play(0);
                 noiseTimer = 0f;

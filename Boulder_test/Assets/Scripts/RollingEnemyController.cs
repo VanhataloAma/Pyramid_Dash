@@ -36,7 +36,7 @@ namespace GA.Pyramid_dash {
                 moveTimer = 0f;
             }
 
-            Debug.Log(Vector3.Distance(transform.position, GameObject.Find("character").transform.position));
+            //Debug.Log(Vector3.Distance(transform.position, GameObject.Find("character").transform.position));
             if (Vector3.Distance(transform.position, GameObject.Find("character").transform.position) < 7f) {
                 audi.UnPause();
             } else {
