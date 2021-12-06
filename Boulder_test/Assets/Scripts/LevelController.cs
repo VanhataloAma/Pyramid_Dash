@@ -35,6 +35,12 @@ namespace GA.Pyramid_dash {
         [SerializeField]
         PortalController portal;
 
+        AudioSource audi;
+
+        public AudioClip ticktock_Sfx;
+
+        float soundTimer;
+
         void Start() {
             Time.timeScale = 1f;
             Time.fixedDeltaTime = 0.02f;
@@ -46,6 +52,8 @@ namespace GA.Pyramid_dash {
             current_Level_Index = SceneManager.GetActiveScene().buildIndex;
             nextLevel = portal.next_Level;
             Debug.Log(nextLevel);
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
         }
 
         // Update is called once per frame
@@ -60,8 +68,13 @@ namespace GA.Pyramid_dash {
         }
 
         void FixedUpdate() {
+            soundTimer += Time.fixedDeltaTime;
             timeLeft -= Time.fixedDeltaTime;
             ui.SetTimer((int)timeLeft);
+            if (timeLeft < (timeLimit / 10) && soundTimer >= 1) {
+                audi.PlayOneShot(ticktock_Sfx);
+                soundTimer = 0f;
+            }
             if (timeLeft <= 0) {
                 SceneManager.LoadScene("GameOver");
             }

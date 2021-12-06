@@ -37,6 +37,9 @@ namespace GA.Pyramid_dash {
         GameObject Tile_Animation_Prefab;
 
         [SerializeField]
+        GameObject Gem_Particles_Prefab;
+
+        [SerializeField]
         LevelController lC;
 
         // Start is called before the first frame update
@@ -109,6 +112,7 @@ namespace GA.Pyramid_dash {
                     lC.AddScore();
                     transform.position = targetPosition;
                     audioData.PlayOneShot(gem_Sfx);
+                    GameObject Gem_Particles_Instance = Instantiate(Gem_Particles_Prefab, transform.position, Quaternion.identity);
 
                 } else if (hit.transform.tag == "Portal") {
                     if (hit.collider.gameObject.GetComponent<PortalController>().IsActive()) {
