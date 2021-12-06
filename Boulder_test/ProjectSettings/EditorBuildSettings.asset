@@ -24,56 +24,62 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 0.unity
     guid: cedf35514fe79ba4c943f7353cdf19e7
   - enabled: 1
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Level 3.unity
     guid: 97e340e126fd86b4bb357c0360c56890
   - enabled: 1
-    path: Assets/Scenes/Level 2.unity
+    path: Assets/Scenes/Level 4.unity
     guid: e5018c4d4830a6444b961446a58feaa8
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
+    path: Assets/Scenes/Level 5.unity
     guid: bc3e71e6b96dfb640b428305f9db4abb
   - enabled: 1
-    path: Assets/Scenes/Level 4.unity
+    path: Assets/Scenes/Level 11.unity
     guid: c259ffadcdca4304989f0bbc1cbfcd6d
   - enabled: 1
-    path: Assets/Scenes/Level 5.unity
+    path: Assets/Scenes/Level 7.unity
     guid: 26aff3062a5c30e45a04b41ddb87d9b6
   - enabled: 1
-    path: Assets/Scenes/Level 6.unity
+    path: Assets/Scenes/Level 9.unity
     guid: 301943bd597b6cd4fb8ac0c8a2ece071
   - enabled: 1
-    path: Assets/Scenes/Level 7.unity
+    path: Assets/Scenes/Level 10.unity
     guid: cf4e4446046d6e04fa87787e5133a488
   - enabled: 1
-    path: Assets/Scenes/Level 8.unity
+    path: Assets/Scenes/Level 6.unity
     guid: 007b2b47b48e57646b0de46e4381b375
   - enabled: 1
-    path: Assets/Scenes/Level 9.unity
+    path: Assets/Scenes/Level 8.unity
     guid: 372f1ba68de475143a5c22aa8ef20c41
   - enabled: 1
-    path: Assets/Scenes/Level 10.unity
+    path: Assets/Scenes/Level 20.unity
     guid: 03b4a8b6d0ca62946883330666233108
   - enabled: 1
-    path: Assets/Scenes/Level 11.unity
+    path: Assets/Scenes/Level 12.unity
     guid: b7f7e98200722174089bfa8956275142
   - enabled: 1
-    path: Assets/Scenes/Level 12.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 80a9a5663fef16e46bcd4375ca1989c3
   - enabled: 1
-    path: Assets/Scenes/BD1.unity
+    path: Assets/Scenes/Level 13.unity
     guid: 27cd8ba29b7829a4c99807644cf0779d
   - enabled: 1
-    path: Assets/Scenes/BD2.unity
+    path: Assets/Scenes/Level 2.unity
     guid: 9672133f1d6211b46801c0f39ce6c767
   - enabled: 1
-    path: Assets/Scenes/BD3.unity
+    path: Assets/Scenes/Level 14.unity
     guid: 6a1f38f03ad4fd34d8e86ea9577884f8
   - enabled: 1
-    path: Assets/Scenes/BD4.unity
+    path: Assets/Scenes/Level 15.unity
     guid: b0a0eea4e7f4fde4986fe36f4faa91be
   - enabled: 1
-    path: Assets/Scenes/BD5.unity
+    path: Assets/Scenes/Level 16.unity
     guid: 55726450564754c449ecb8693ff2a00d
+  - enabled: 1
+    path: Assets/Scenes/Level 17.unity
+    guid: daa93bbaa39649a49a05b118bad1ce8c
+  - enabled: 1
+    path: Assets/Scenes/Level 18.unity
+    guid: d5b11ecc629b76e4d890c3a025d0eb23
   - enabled: 1
     path: Assets/Scenes/HighScore.unity
     guid: 42cb1ec03c8217f47a546a5e4a002923
@@ -86,4 +92,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Transition_Test_Scene_2.unity
     guid: 7608f4b0346373e48bdce4bcd4a82827
+  - enabled: 1
+    path: Assets/Scenes/Level 19.unity
+    guid: f941a8e1a15d8da4fb7fc1b7fc17db2e
   m_configObjects: {}

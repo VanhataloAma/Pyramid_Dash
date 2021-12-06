@@ -8,9 +8,7 @@ namespace GA.Pyramid_dash {
 
         public Animator transition;
 
-        public float transitionTime = 1f;
-
-        public IEnumerator LoadLevel(string LevelName) {
+        public IEnumerator LoadLevel(string LevelName, float transitionTime) {
             transition.SetTrigger("Start");
 
             yield return new WaitForSeconds(transitionTime);

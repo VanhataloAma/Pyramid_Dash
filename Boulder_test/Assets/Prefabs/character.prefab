@@ -125,6 +125,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 0}
+  digging_Sfx: {fileID: 8300000, guid: 71c1f807d3d76264d9221487a8da8726, type: 3}
+  death_Sfx: {fileID: 8300000, guid: e1af87cb2a0f4524282da137aff1df0c, type: 3}
+  gem_Sfx: {fileID: 8300000, guid: af7f95066e7cdb5418c8b51be3233735, type: 3}
+  Tile_Animation_Prefab: {fileID: 7496063136956661067, guid: 11284426b6a85c64fbd4d3dadeb650b4, type: 3}
+  Gem_Particles_Prefab: {fileID: 6187733557696704642, guid: 4c6f723d6b19afa4cba9f8794f0ee2cf, type: 3}
+  lC: {fileID: 0}
 --- !u!82 &4273797245760217254
 AudioSource:
   m_ObjectHideFlags: 0
