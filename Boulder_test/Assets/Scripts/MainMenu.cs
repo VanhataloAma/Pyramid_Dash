@@ -18,6 +18,9 @@ namespace GA.Pyramid_dash
         [SerializeField]
         Slider musicSlider;
 
+        [SerializeField]
+        Toggle diggingSfx;
+
         void Start() {
             effectSlider.value = PlayerPrefs.GetFloat("EffectVolume");
             musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
@@ -45,6 +48,10 @@ namespace GA.Pyramid_dash
 
         public void ChangeMusicVolume() {
             gm.SetMusicVolume(musicSlider.value);
+        }
+
+        public void ChangeDiggingSfx() {
+            gm.SetDiggingSfx(diggingSfx.isOn);
         }
 
     }

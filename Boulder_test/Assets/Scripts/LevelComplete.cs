@@ -21,6 +21,11 @@ namespace GA.Pyramid_dash {
 
         [SerializeField]
         LevelLoader loader;
+
+        int gemsScore = 0;
+        int timeScore = 0;
+        int totalScore = 0;
+
         // Start is called before the first frame update
         void Start() {
             gemsText.text = "Gem Score: " + LevelController.levelScore;
@@ -29,6 +34,26 @@ namespace GA.Pyramid_dash {
             gm.AddScore((LevelController.levelScore + (int)LevelController.timeLeft));
         }
 
+        void FixedUpdate() {
+            if (gemsScore < LevelController.levelScore) {
+                gemsScore++;
+
+            } else if (timeScore < (int)LevelController.timeLeft) {
+                timeScore++;
+
+            } else if (totalScore < (LevelController.levelScore + (int)LevelController.timeLeft)) {
+                totalScore++;
+            }
+
+            gemsText.text = "Gem Score: " + gemsScore;
+            timeText.text = "Time Score: " + timeScore;
+            totalText.text = "Total Score: " + totalScore;
+        }
+        void CountScore() {
+            for (int i = 0; i < LevelController.levelScore; i++) {
+
+            }
+        }
         public void Continue() {
             StartCoroutine(loader.LoadLevel(LevelController.nextLevel, 1f));
         }
