@@ -22,7 +22,18 @@ namespace GA.Pyramid_dash
         Toggle diggingSfx;
 
         void Start() {
-            effectSlider.value = PlayerPrefs.GetFloat("EffectVolume");
+            if (PlayerPrefs.HasKey("EffectVolume")) {
+                effectSlider.value = PlayerPrefs.GetFloat("EffectVolume");
+            } else {
+                effectSlider.value = 0.5f;
+            }
+
+            if (PlayerPrefs.HasKey("MusicVolume")) {
+                effectSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+            } else {
+                musicSlider.value = 0.5f;
+            }
+            
             musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         }
 
