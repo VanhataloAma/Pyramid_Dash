@@ -44,5 +44,14 @@ namespace GA.Pyramid_dash {
         public void SetMusicVolume(float volume) {
             PlayerPrefs.SetFloat("MusicVolume", volume);
         }
+
+        public void SetDiggingSfx(bool input) {
+            if (input) {
+                PlayerPrefs.SetInt("DiggingSfx", 1);
+            } else {
+                PlayerPrefs.SetInt("DiggingSfx", 0);
+            }
+            Debug.Log(PlayerPrefs.GetInt("DiggingSfx"));
+        }
     }
 }

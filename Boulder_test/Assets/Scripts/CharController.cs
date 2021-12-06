@@ -100,7 +100,9 @@ namespace GA.Pyramid_dash {
                     tilemap.SetTile(Vector3Int.FloorToInt(targetPosition), null);
                     transform.position = targetPosition;
                     GameObject Tile_Animation_Instance = Instantiate(Tile_Animation_Prefab, transform.position, Quaternion.identity);
-                    audioData.PlayOneShot(digging_Sfx);
+                    if (PlayerPrefs.GetInt("DiggingSfx") == 1) {
+                        audioData.PlayOneShot(digging_Sfx);
+                    }
 
                 } else if (hit.transform.tag == "Boulder" && horizontal) {
                     pushPosition = hit.transform.position - transform.position;

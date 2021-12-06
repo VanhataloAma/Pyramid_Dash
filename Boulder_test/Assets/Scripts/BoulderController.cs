@@ -130,6 +130,7 @@ namespace GA.Pyramid_dash {
         void OnCollisionEnter2D(Collision2D col) {
             if (col.transform.tag == "Player" && falling >= 0) {
                 hit.collider.gameObject.GetComponent<CharController>().GameOver();
+                falling = 0;
             }
             if (col.transform.tag == "Enemy" && falling >= 0)
             {

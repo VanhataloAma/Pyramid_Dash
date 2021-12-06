@@ -210,7 +210,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b87319c6f489b4aacb8147b89277cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
 --- !u!1001 &95481151
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -298,7 +297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b87319c6f489b4aacb8147b89277cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
 --- !u!114 &190942668 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
@@ -1632,7 +1630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b87319c6f489b4aacb8147b89277cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
 --- !u!1001 &527834762
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1826,7 +1823,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b87319c6f489b4aacb8147b89277cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
 --- !u!1 &676855356
 GameObject:
   m_ObjectHideFlags: 0
@@ -5580,16 +5576,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 190942668}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
-      propertyPath: timeLimit
-      value: 60
+      propertyPath: gemValue
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: timeLimit
-      value: 120
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: requiredGems
-      value: 10
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
@@ -6126,7 +6122,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b87319c6f489b4aacb8147b89277cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
 --- !u!1 &1480422751
 GameObject:
   m_ObjectHideFlags: 0
@@ -6298,6 +6293,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
+      propertyPath: loader
+      value: 
+      objectReference: {fileID: 1973625352}
+    - target: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
+      propertyPath: next_Level
+      value: Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: playerCollider
       value: 
       objectReference: {fileID: 998734044}
@@ -6413,6 +6416,74 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 734b3ec1e62e39f4d841fb3207eba789, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1001 &1973625351
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 78412521788073893, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_Name
+      value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 78412521788073894, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+--- !u!114 &1973625352 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 78412521788073895, guid: a5e5b4961bf32af48a66a518f5c31155, type: 3}
+  m_PrefabInstance: {fileID: 1973625351}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11dc192b7f412d24688a8a1c6c07164d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2016886754
@@ -6596,7 +6667,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5b87319c6f489b4aacb8147b89277cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 0}
 --- !u!1 &2075756045
 GameObject:
   m_ObjectHideFlags: 0
