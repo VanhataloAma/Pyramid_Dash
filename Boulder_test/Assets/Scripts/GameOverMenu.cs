@@ -13,7 +13,11 @@ namespace GA.Pyramid_dash {
 
         [SerializeField]
         LevelLoader loader;
+
+        AudioSource audi;
         void Start() {
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
             if (LevelController.timeLeft <= 0) {
                 timeText.gameObject.SetActive(true);
             }

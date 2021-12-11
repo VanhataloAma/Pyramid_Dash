@@ -29,6 +29,8 @@ namespace GA.Pyramid_dash {
         Animator boulder_Animator;
 
         AudioSource audi;
+
+        bool alive = true;
         
         // Start is called before the first frame update
         void Start() {
@@ -40,7 +42,10 @@ namespace GA.Pyramid_dash {
 
         // Update is called once per frame
         void FixedUpdate() {
-            Move();
+            if (alive) {
+                Move();
+            }
+           
         }
 
         void Move() {
@@ -139,9 +144,7 @@ namespace GA.Pyramid_dash {
             if (col.transform.tag == "Enemy" && falling >= 0)
             {
                 Destroy(col.gameObject);
-                GameObject Gem_Instance = Instantiate(Gem_Prefab, transform.position, Quaternion.identity);
-                Destroy(MoveCheck_Instance);
-                Destroy(gameObject);
+                StartCoroutine(Explode());
             }
         }
 
@@ -156,6 +159,15 @@ namespace GA.Pyramid_dash {
                 Debug.Log(hit.transform.tag);
                 return false;
             }
+        }
+
+        IEnumerator Explode() {
+            boulder_Animator.SetTrigger("Blow");
+            alive = false;
+            GameObject Gem_Instance = Instantiate(Gem_Prefab, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(0.5f);
+            Destroy(MoveCheck_Instance);
+            Destroy(gameObject);
         }
 
     }
