@@ -30,6 +30,9 @@ namespace GA.Pyramid_dash {
 
         AudioSource audi;
 
+        public AudioClip thud_Sfx;
+        public AudioClip blow_Sfx;
+
         bool alive = true;
         
         // Start is called before the first frame update
@@ -66,7 +69,7 @@ namespace GA.Pyramid_dash {
             Debug.DrawRay(raycast_Start_Down, nextPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
                 if (falling >= 2) {
-                    audi.Play(0);
+                    audi.PlayOneShot(thud_Sfx);
                 }
                 if (hit.transform.tag == "Player") {
                     if (falling == 0) {
@@ -163,6 +166,7 @@ namespace GA.Pyramid_dash {
 
         IEnumerator Explode() {
             boulder_Animator.SetTrigger("Blow");
+            audi.PlayOneShot(blow_Sfx);
             alive = false;
             GameObject Gem_Instance = Instantiate(Gem_Prefab, transform.position, Quaternion.identity);
             yield return new WaitForSeconds(0.5f);

@@ -11434,18 +11434,6 @@ PrefabInstance:
       propertyPath: portal
       value: 
       objectReference: {fileID: 2117357174}
-    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
-      propertyPath: gemValue
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
-      propertyPath: timeLimit
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
-      propertyPath: requiredGems
-      value: 12
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
 --- !u!1001 &1232752637
@@ -14070,7 +14058,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840843664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.271813, y: 8.474611, z: -10}
+  m_LocalPosition: {x: -11.306664, y: 8.474611, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 246661035}

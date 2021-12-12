@@ -44,13 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c711ad7ac2682d5468e8e245abd762be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  requiredGems: 2
-  gemValue: 3
-  timeLimit: 500
+  requiredGems: 12
+  gemValue: 10
+  timeLimit: 120
   sandColor: 0
   ui: {fileID: 0}
   portal: {fileID: 0}
   ticktock_Sfx: {fileID: 8300000, guid: 24c68bb1575e29e41b0e82037bccf579, type: 3}
+  button_Sfx: {fileID: 8300000, guid: a458e479048667a4a8fc235f640185d8, type: 3}
 --- !u!82 &7739620309396482144
 AudioSource:
   m_ObjectHideFlags: 0

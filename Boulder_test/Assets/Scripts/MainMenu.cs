@@ -21,7 +21,13 @@ namespace GA.Pyramid_dash
         [SerializeField]
         Toggle diggingSfx;
 
+        AudioSource audi;
+
+        public AudioClip button_Sfx;
+
         void Start() {
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
             if (PlayerPrefs.HasKey("EffectVolume")) {
                 effectSlider.value = PlayerPrefs.GetFloat("EffectVolume");
             } else {
@@ -50,6 +56,7 @@ namespace GA.Pyramid_dash
         }
 
         public void LevelSelect(string level_Name) {
+            audi.PlayOneShot(button_Sfx);
             SceneManager.LoadScene(level_Name);
         }
 
