@@ -136,12 +136,12 @@ namespace GA.Pyramid_dash {
         }
 
         private IEnumerator Pause(int p) {
-            //Time.timeScale = 0.1f;
+            Time.fixedDeltaTime = 5f;
             float pauseEndTime = Time.realtimeSinceStartup + p;
             while (Time.realtimeSinceStartup < pauseEndTime) {
                 yield return 0;
             }
-            Time.timeScale = 1f;
+            Time.fixedDeltaTime = 0.02f;
             SceneManager.LoadScene("GameOver");
         }
     }

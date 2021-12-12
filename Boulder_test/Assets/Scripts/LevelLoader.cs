@@ -11,7 +11,11 @@ namespace GA.Pyramid_dash {
         public IEnumerator LoadLevel(string LevelName, float transitionTime) {
             transition.SetTrigger("Start");
 
+            Time.fixedDeltaTime = 5f;
+
             yield return new WaitForSeconds(transitionTime);
+
+            Time.fixedDeltaTime = 0.02f;
 
             SceneManager.LoadScene(LevelName);
 
@@ -20,7 +24,11 @@ namespace GA.Pyramid_dash {
         public IEnumerator LoadLevel(int LevelIndex, float transitionTime) {
             transition.SetTrigger("Start");
 
+            Time.fixedDeltaTime = 5f;
+
             yield return new WaitForSeconds(transitionTime);
+
+            Time.fixedDeltaTime = 0.02f;
 
             SceneManager.LoadScene(LevelIndex);
 
