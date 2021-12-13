@@ -68,7 +68,7 @@ namespace GA.Pyramid_dash {
             hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(0, -1, 0), 0.6f);
             Debug.DrawRay(raycast_Start_Down, nextPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
-                if (falling >= 2) {
+                if (falling > 2) {
                     audi.PlayOneShot(thud_Sfx);
                 }
                 if (hit.transform.tag == "Player") {
