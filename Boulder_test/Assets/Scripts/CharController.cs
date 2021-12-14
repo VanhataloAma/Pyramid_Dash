@@ -56,28 +56,28 @@ namespace GA.Pyramid_dash {
 
             nextPosition = transform.position;
 
-            if (Input.GetAxis("Vertical") < -0.8f) {
+            if (Input.GetAxis("Vertical") < -0.7f) {
                 nextPosition.y -= 1f;
                 move_Horizontal = false;
                 move_Timer += Time.deltaTime;
                 animator.SetFloat("Move X", 0);
                 animator.SetFloat("Move Y", -0.5f);
                 
-            } else if (Input.GetAxis("Vertical") > 0.8f) {
+            } else if (Input.GetAxis("Vertical") > 0.7f) {
                 nextPosition.y += 1f;
                 move_Horizontal = false;
                 move_Timer += Time.deltaTime;
                 animator.SetFloat("Move X", 0);
                 animator.SetFloat("Move Y", 0.5f);
 
-            } else if (Input.GetAxis("Horizontal") < -0.8f) {
+            } else if (Input.GetAxis("Horizontal") < -0.7f) {
                 nextPosition.x -= 1f;
                 move_Horizontal = true;
                 move_Timer += Time.deltaTime;
                 animator.SetFloat("Move Y", 0);
                 animator.SetFloat("Move X", -0.5f);
                 
-            } else if (Input.GetAxis("Horizontal") > 0.8f) {
+            } else if (Input.GetAxis("Horizontal") > 0.7f) {
                 nextPosition.x += 1f;
                 move_Horizontal = true;
                 move_Timer += Time.deltaTime;
