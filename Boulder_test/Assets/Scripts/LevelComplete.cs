@@ -28,8 +28,12 @@ namespace GA.Pyramid_dash {
 
         bool ready = false;
 
+        AudioSource audi;
+
         // Start is called before the first frame update
         void Start() {
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
             gm.AddScore((LevelController.levelScore + (int)LevelController.timeLeft));
             StartCoroutine(StartDelay());
         }
@@ -44,6 +48,8 @@ namespace GA.Pyramid_dash {
 
                 } else if (totalScore < (LevelController.levelScore + (int)LevelController.timeLeft)) {
                     totalScore++;
+                } else {
+                    audi.Stop();
                 }
 
                 gemsText.text = "Gem Score: " + gemsScore;
@@ -69,6 +75,7 @@ namespace GA.Pyramid_dash {
             yield return new WaitForSeconds(1.1f);
 
             ready = true;
+            audi.Play();
         }
 
     }
