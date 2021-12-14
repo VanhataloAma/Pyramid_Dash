@@ -28,10 +28,8 @@ namespace GA.Pyramid_dash {
 
         // Start is called before the first frame update
         void Start() {
-            gemsText.text = "Gem Score: " + LevelController.levelScore;
-            timeText.text = "Time Score: " + (int)LevelController.timeLeft;
-            totalText.text = "Total Score: " + (LevelController.levelScore + (int)LevelController.timeLeft);
             gm.AddScore((LevelController.levelScore + (int)LevelController.timeLeft));
+            StartCoroutine(StartDelay());
         }
 
         void FixedUpdate() {
@@ -60,6 +58,14 @@ namespace GA.Pyramid_dash {
 
         public void QuitGame() {
             StartCoroutine(loader.LoadLevel("Menu", 1f));
+        }
+
+        public IEnumerator StartDelay() {
+            Time.fixedDeltaTime = 5f;
+
+            yield return new WaitForSeconds(4f);
+
+            Time.fixedDeltaTime = 0.02f;
         }
 
     }

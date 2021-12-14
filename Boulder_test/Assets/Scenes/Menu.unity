@@ -2279,6 +2279,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1256f60065b828a40a665f80db5bec58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &428220307 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5143274757913106318, guid: 01d2734a99807fa40a07347b030f547d, type: 3}
+  m_PrefabInstance: {fileID: 1704480498}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11dc192b7f412d24688a8a1c6c07164d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &447208022
 GameObject:
   m_ObjectHideFlags: 0
@@ -5004,6 +5015,7 @@ MonoBehaviour:
   effectSlider: {fileID: 1624741543}
   musicSlider: {fileID: 170327432}
   diggingSfx: {fileID: 857417446}
+  loader: {fileID: 428220307}
   button_Sfx: {fileID: 8300000, guid: a458e479048667a4a8fc235f640185d8, type: 3}
 --- !u!82 &1020489000
 AudioSource:
@@ -7636,6 +7648,7 @@ MonoBehaviour:
   effectSlider: {fileID: 1624741543}
   musicSlider: {fileID: 170327432}
   diggingSfx: {fileID: 857417446}
+  loader: {fileID: 428220307}
   button_Sfx: {fileID: 8300000, guid: a458e479048667a4a8fc235f640185d8, type: 3}
 --- !u!82 &1628731454
 AudioSource:

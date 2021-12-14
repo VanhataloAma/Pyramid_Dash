@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using GA.Pyramid_dash;
 
-namespace GA.Pyramid_dash
-{
-    public class MainMenu : MonoBehaviour
-    {
+namespace GA.Pyramid_dash {
+    public class MainMenu : MonoBehaviour {
         [SerializeField]
         GameManager gm;
 
@@ -20,6 +18,9 @@ namespace GA.Pyramid_dash
 
         [SerializeField]
         Toggle diggingSfx;
+
+        [SerializeField]
+        LevelLoader loader;
 
         AudioSource audi;
 
@@ -57,7 +58,8 @@ namespace GA.Pyramid_dash
 
         public void LevelSelect(string level_Name) {
             audi.PlayOneShot(button_Sfx);
-            SceneManager.LoadScene(level_Name);
+            StartCoroutine(loader.LoadLevel(level_Name, 1f));
+            //SceneManager.LoadScene(level_Name);
         }
 
         public void ChangeEffectVolume() {

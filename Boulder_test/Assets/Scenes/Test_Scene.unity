@@ -3856,6 +3856,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 827134117}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
+      propertyPath: gemValue
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: timeLimit
       value: 500
       objectReference: {fileID: 0}

@@ -759,7 +759,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Total Score: 00
+  m_text: 'Total Score: 0
 
 '
   m_isRightToLeft: 0
@@ -895,7 +895,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Gem Score: 120'
+  m_text: 'Gem Score: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
   m_sharedMaterial: {fileID: 8092387530380325658, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
@@ -1245,7 +1245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Time Score: 45'
+  m_text: 'Time Score: 0'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
   m_sharedMaterial: {fileID: 8092387530380325658, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
@@ -1424,8 +1424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00010681, y: 0.00057125}
-  m_SizeDelta: {x: 1500, y: 888.95}
+  m_AnchoredPosition: {x: -0.000013102, y: 0.00040019}
+  m_SizeDelta: {x: 1500, y: 893.55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897723697
 MonoBehaviour:
