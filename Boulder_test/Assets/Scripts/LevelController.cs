@@ -23,7 +23,7 @@ namespace GA.Pyramid_dash {
 
         public static float timeLeft;
 
-        public static string nextLevel;
+        public static string nextLevel = "Level 0";
 
         int gemsCollected;
 

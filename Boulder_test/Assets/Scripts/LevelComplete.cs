@@ -26,26 +26,37 @@ namespace GA.Pyramid_dash {
         int timeScore = 0;
         int totalScore = 0;
 
+        bool ready = false;
+
+        AudioSource audi;
+
         // Start is called before the first frame update
         void Start() {
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
             gm.AddScore((LevelController.levelScore + (int)LevelController.timeLeft));
             StartCoroutine(StartDelay());
         }
 
         void FixedUpdate() {
-            if (gemsScore < LevelController.levelScore) {
-                gemsScore++;
+            if (ready) {
+                if (gemsScore < LevelController.levelScore) {
+                    gemsScore++;
 
-            } else if (timeScore < (int)LevelController.timeLeft) {
-                timeScore++;
+                } else if (timeScore < (int)LevelController.timeLeft) {
+                    timeScore++;
 
-            } else if (totalScore < (LevelController.levelScore + (int)LevelController.timeLeft)) {
-                totalScore++;
+                } else if (totalScore < (LevelController.levelScore + (int)LevelController.timeLeft)) {
+                    totalScore++;
+                } else {
+                    audi.Stop();
+                }
+
+                gemsText.text = "Gem Score: " + gemsScore;
+                timeText.text = "Time Score: " + timeScore;
+                totalText.text = "Total Score: " + totalScore;
             }
-
-            gemsText.text = "Gem Score: " + gemsScore;
-            timeText.text = "Time Score: " + timeScore;
-            totalText.text = "Total Score: " + totalScore;
+            
         }
         void CountScore() {
             for (int i = 0; i < LevelController.levelScore; i++) {
@@ -61,11 +72,10 @@ namespace GA.Pyramid_dash {
         }
 
         public IEnumerator StartDelay() {
-            Time.fixedDeltaTime = 5f;
+            yield return new WaitForSeconds(1.1f);
 
-            yield return new WaitForSeconds(4f);
-
-            Time.fixedDeltaTime = 0.02f;
+            ready = true;
+            audi.Play();
         }
 
     }
