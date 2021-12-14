@@ -18,8 +18,8 @@ namespace GA.Pyramid_dash {
             
         }
 
-        public void Nextlevel() {
-            StartCoroutine(loader.LoadLevel(LevelController.nextLevel, 1f));
+        public void Nextlevel(string nextLevel) {
+            StartCoroutine(loader.LoadLevel(nextLevel, 1f));
         }
 
     }

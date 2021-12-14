@@ -9954,7 +9954,7 @@ PrefabInstance:
       objectReference: {fileID: 26207415}
     - target: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: next_Level
-      value: Level 6
+      value: 2ndStory
       objectReference: {fileID: 0}
     - target: {fileID: 5805282690857221507, guid: cea79cbc848120a41bbf374010ee3fc6, type: 3}
       propertyPath: playerCollider
