@@ -27,6 +27,7 @@ namespace GA.Pyramid_dash {
         public AudioClip button_Sfx;
 
         void Start() {
+            Time.timeScale = 1f;
             audi = GetComponent<AudioSource>();
             audi.volume = PlayerPrefs.GetFloat("EffectVolume");
             if (PlayerPrefs.HasKey("EffectVolume")) {
