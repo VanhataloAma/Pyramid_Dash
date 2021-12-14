@@ -5225,6 +5225,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sand Tomb1
       objectReference: {fileID: 0}
+    - target: {fileID: 6341677044158162830, guid: 365f8af5e0d4da641a54f88c429a4080, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bf74438a73fe87c42b8b1539f92284be, type: 3}
     - target: {fileID: 6341677044158162831, guid: 365f8af5e0d4da641a54f88c429a4080, type: 3}
       propertyPath: m_RootOrder
       value: 13

@@ -12351,6 +12351,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6701594118652304574, guid: df6923647fff1074ba77f7e17fc808cd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c8d5e81d43dec234b8ae6c6d4cf63687, type: 3}
     - target: {fileID: 6701594118652304575, guid: df6923647fff1074ba77f7e17fc808cd, type: 3}
       propertyPath: m_Name
       value: Sand Tomb2

@@ -10907,6 +10907,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6701594118652304574, guid: df6923647fff1074ba77f7e17fc808cd, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ad2fe7f6f3b88a4d9678a9d6d233538, type: 3}
     - target: {fileID: 6701594118652304575, guid: df6923647fff1074ba77f7e17fc808cd, type: 3}
       propertyPath: m_Name
       value: Sand Tomb2
@@ -11168,7 +11172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: sandColor
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: timeLimit
