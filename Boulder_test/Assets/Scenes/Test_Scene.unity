@@ -3859,6 +3859,10 @@ PrefabInstance:
       propertyPath: timeLimit
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
+      propertyPath: requiredGems
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
 --- !u!1001 &6187733557665271014

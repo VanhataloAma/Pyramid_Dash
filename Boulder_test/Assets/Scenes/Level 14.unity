@@ -5533,12 +5533,16 @@ PrefabInstance:
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
+      propertyPath: sandColor
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: timeLimit
-      value: 70
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5535336651102839351, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}
       propertyPath: requiredGems
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de8448cb70e35b249bc72b67c46ec256, type: 3}

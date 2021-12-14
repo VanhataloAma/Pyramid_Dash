@@ -8,6 +8,18 @@ namespace GA.Pyramid_dash {
 
         public Animator transition;
 
+        void Start() {
+            //StartCoroutine(StartDelay());
+        }
+
+        public IEnumerator StartDelay() {
+            Time.fixedDeltaTime = 5f;
+
+            yield return new WaitForSeconds(0.5f);
+
+            Time.fixedDeltaTime = 0.02f;
+        }
+
         public IEnumerator LoadLevel(string LevelName, float transitionTime) {
             transition.SetTrigger("Start");
 

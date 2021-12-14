@@ -23,10 +23,14 @@ namespace GA.Pyramid_dash {
             framingTransposer = GetComponentInChildren<CinemachineFramingTransposer>();
             Debug.Log(vcam.m_Follow.tag);
             SetUpFramingTransposer();
+            //vcam.m_Lens.OrthographicSize = 8f;
         }
 
         // Update is called once per frame
         void FixedUpdate() {
+            /*if (vcam.m_Lens.OrthographicSize > 6f) {
+                vcam.m_Lens.OrthographicSize -= 0.02f;
+            }*/
             characterPosition = vcam.m_Follow.position;
             cameraPosition = cam.transform.position;
 
