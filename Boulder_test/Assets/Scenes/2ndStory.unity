@@ -4300,7 +4300,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your opinion does not intrest me. You can only blame yourself... You are
+  m_text: Your opinion does not interest me. You can only blame yourself... You are
     in my way. The crown belongs to me. Besides, you are too childish to be a king
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
