@@ -9165,8 +9165,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -375.63998, y: -120.70001}
-  m_SizeDelta: {x: 93.4342, y: 37.518}
+  m_AnchoredPosition: {x: -358.866, y: -113.97}
+  m_SizeDelta: {x: 126.982, y: 50.989}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1137756506
 MonoBehaviour:
@@ -9525,8 +9525,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 371.36008, y: -120.609985}
-  m_SizeDelta: {x: 106.9764, y: 37.3333}
+  m_AnchoredPosition: {x: 350, y: -113.981}
+  m_SizeDelta: {x: 144.085, y: 50.284}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1167488687
 MonoBehaviour:
@@ -15806,7 +15806,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Well well, nephew. It seems you have passed the first few chambers. Congratulations.
+  m_text: Well well, nephew. It seems you have passed the first few areas. Congratulations.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
   m_sharedMaterial: {fileID: 8092387530380325658, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}

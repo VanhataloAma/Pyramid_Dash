@@ -908,6 +908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SimpleFade
       objectReference: {fileID: 0}
+    - target: {fileID: 5143274757913106319, guid: 01d2734a99807fa40a07347b030f547d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5143274757985519289, guid: 01d2734a99807fa40a07347b030f547d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1333,10 +1337,10 @@ RectTransform:
   m_Father: {fileID: 177123556}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 370, y: -210.67}
-  m_SizeDelta: {x: 43.843, y: 55.2299}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -37.5, y: 75.1}
+  m_SizeDelta: {x: 43.842987, y: 55.229904}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1887866297
 MonoBehaviour:
