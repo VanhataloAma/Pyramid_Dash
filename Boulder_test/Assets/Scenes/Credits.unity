@@ -910,7 +910,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5143274757913106319, guid: 01d2734a99807fa40a07347b030f547d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5143274757985519289, guid: 01d2734a99807fa40a07347b030f547d, type: 3}
       propertyPath: m_Pivot.x
@@ -1505,7 +1505,8 @@ MonoBehaviour:
 
     Brandon Emene
 
-'
+
+    Borderer'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
   m_sharedMaterial: {fileID: 8092387530380325658, guid: bfa03a373387b6a4a89b5b76dd5dc083, type: 2}
