@@ -1110,7 +1110,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 140860189}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2128214239}
+        m_TargetAssemblyTypeName: GA.Pyramid_dash.DialogController, Assembly-CSharp
+        m_MethodName: Nextlevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level 0
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &140860189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3121,7 +3133,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 527305666}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2128214239}
+        m_TargetAssemblyTypeName: GA.Pyramid_dash.DialogController, Assembly-CSharp
+        m_MethodName: Nextlevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level 0
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &527305666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9233,7 +9257,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1570027033}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2128214239}
+        m_TargetAssemblyTypeName: GA.Pyramid_dash.DialogController, Assembly-CSharp
+        m_MethodName: Nextlevel
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level 0
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1570027033
 MonoBehaviour:
   m_ObjectHideFlags: 0

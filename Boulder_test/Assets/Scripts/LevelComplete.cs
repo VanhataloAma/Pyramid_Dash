@@ -38,6 +38,15 @@ namespace GA.Pyramid_dash {
             StartCoroutine(StartDelay());
         }
 
+        void Update() {
+            if (ready) {
+                if (Input.GetMouseButtonDown(0)) {
+                    gemsScore = LevelController.levelScore;
+                    timeScore = (int)LevelController.timeLeft;
+                    totalScore = (LevelController.levelScore + (int)LevelController.timeLeft);
+                }
+            }
+        }
         void FixedUpdate() {
             if (ready) {
                 if (gemsScore < LevelController.levelScore) {
