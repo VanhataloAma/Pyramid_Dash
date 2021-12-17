@@ -23,7 +23,7 @@ namespace GA.Pyramid_dash {
 
         public static float timeLeft;
 
-        public static string nextLevel;
+        public static string nextLevel = "Level 0";
 
         int gemsCollected;
 
@@ -38,6 +38,8 @@ namespace GA.Pyramid_dash {
         AudioSource audi;
 
         public AudioClip ticktock_Sfx;
+
+        public AudioClip button_Sfx;
 
         float soundTimer;
 
@@ -71,7 +73,7 @@ namespace GA.Pyramid_dash {
             soundTimer += Time.fixedDeltaTime;
             timeLeft -= Time.fixedDeltaTime;
             ui.SetTimer((int)timeLeft);
-            if (timeLeft <= (timeLimit / 10) && soundTimer >= 1 && timeLeft >= 0) {
+            if (timeLeft <= 10 && soundTimer >= 1 && timeLeft >= 0) {
                 audi.PlayOneShot(ticktock_Sfx);
                 soundTimer = 0f;
             }
@@ -82,11 +84,12 @@ namespace GA.Pyramid_dash {
         }
 
         public void TogglePause() {
+            audi.PlayOneShot(button_Sfx);
             if (!paused) {
                 var SceneLoad = SceneManager.LoadSceneAsync("PauseMenu", LoadSceneMode.Additive);
                 SceneLoad.completed += (s) => {
-                    Debug.Log("Done");
-                    Debug.Log(SceneManager.GetSceneAt(0).name);
+                    /*Debug.Log("Done");
+                    Debug.Log(SceneManager.GetSceneAt(0).name);*/
                     SceneManager.GetSceneByName("PauseMenu").GetRootGameObjects()[0].gameObject.transform.position = GameObject.Find("Main Camera").transform.position;
                 };
                 paused = true;

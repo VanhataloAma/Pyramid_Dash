@@ -42,6 +42,9 @@ namespace GA.Pyramid_dash {
         [SerializeField]
         LevelController lC;
 
+        [SerializeField]
+        GameObject gameOver;
+
         // Start is called before the first frame update
         void Start() {
             audioData = GetComponent<AudioSource>();
@@ -53,28 +56,28 @@ namespace GA.Pyramid_dash {
 
             nextPosition = transform.position;
 
-            if (Input.GetKey("s")) {
+            if (Input.GetAxis("Vertical") < -0.5f) {
                 nextPosition.y -= 1f;
                 move_Horizontal = false;
                 move_Timer += Time.deltaTime;
                 animator.SetFloat("Move X", 0);
                 animator.SetFloat("Move Y", -0.5f);
                 
-            } else if (Input.GetKey("w")) {
+            } else if (Input.GetAxis("Vertical") > 0.5f) {
                 nextPosition.y += 1f;
                 move_Horizontal = false;
                 move_Timer += Time.deltaTime;
                 animator.SetFloat("Move X", 0);
                 animator.SetFloat("Move Y", 0.5f);
 
-            } else if (Input.GetKey("a")) {
+            } else if (Input.GetAxis("Horizontal") < -0.5f) {
                 nextPosition.x -= 1f;
                 move_Horizontal = true;
                 move_Timer += Time.deltaTime;
                 animator.SetFloat("Move Y", 0);
                 animator.SetFloat("Move X", -0.5f);
                 
-            } else if (Input.GetKey("d")) {
+            } else if (Input.GetAxis("Horizontal") > 0.5f) {
                 nextPosition.x += 1f;
                 move_Horizontal = true;
                 move_Timer += Time.deltaTime;
@@ -128,18 +131,17 @@ namespace GA.Pyramid_dash {
 
         public void GameOver() {
             audioData.PlayOneShot(death_Sfx);
-            Time.timeScale = 0f;
+            gameOver.SetActive(true);
             StartCoroutine(Pause(2));
-            
         }
 
         private IEnumerator Pause(int p) {
-            Time.timeScale = 0.1f;
+            Time.fixedDeltaTime = 5f;
             float pauseEndTime = Time.realtimeSinceStartup + p;
             while (Time.realtimeSinceStartup < pauseEndTime) {
                 yield return 0;
             }
-            Time.timeScale = 1f;
+            Time.fixedDeltaTime = 0.02f;
             SceneManager.LoadScene("GameOver");
         }
     }

@@ -9,7 +9,11 @@ namespace GA.Pyramid_dash {
         RaycastHit2D hit;
 
         [SerializeField]
+        GameObject Gem_Prefab;
+
+        [SerializeField]
         GameObject MoveCheck_Prefab;
+
         GameObject MoveCheck_Instance;
 
         Vector3 nextPosition;
@@ -25,6 +29,11 @@ namespace GA.Pyramid_dash {
         Animator boulder_Animator;
 
         AudioSource audi;
+
+        public AudioClip thud_Sfx;
+        public AudioClip blow_Sfx;
+
+        bool alive = true;
         
         // Start is called before the first frame update
         void Start() {
@@ -36,7 +45,10 @@ namespace GA.Pyramid_dash {
 
         // Update is called once per frame
         void FixedUpdate() {
-            Move();
+            if (alive) {
+                Move();
+            }
+           
         }
 
         void Move() {
@@ -56,8 +68,8 @@ namespace GA.Pyramid_dash {
             hit = Physics2D.Raycast(raycast_Start_Down, new Vector3(0, -1, 0), 0.6f);
             Debug.DrawRay(raycast_Start_Down, nextPosition - transform.position, Color.green, 2, false);
             if (hit.collider != null) {
-                if (falling >= 2) {
-                    audi.Play(0);
+                if (falling > 2) {
+                    audi.PlayOneShot(thud_Sfx);
                 }
                 if (hit.transform.tag == "Player") {
                     if (falling == 0) {
@@ -135,6 +147,7 @@ namespace GA.Pyramid_dash {
             if (col.transform.tag == "Enemy" && falling >= 0)
             {
                 Destroy(col.gameObject);
+                StartCoroutine(Explode());
             }
         }
 
@@ -149,6 +162,16 @@ namespace GA.Pyramid_dash {
                 Debug.Log(hit.transform.tag);
                 return false;
             }
+        }
+
+        IEnumerator Explode() {
+            boulder_Animator.SetTrigger("Blow");
+            audi.PlayOneShot(blow_Sfx);
+            alive = false;
+            GameObject Gem_Instance = Instantiate(Gem_Prefab, transform.position, Quaternion.identity);
+            yield return new WaitForSeconds(0.5f);
+            Destroy(MoveCheck_Instance);
+            Destroy(gameObject);
         }
 
     }

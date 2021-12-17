@@ -12,10 +12,6 @@ namespace GA.Pyramid_dash {
         public static string playerName;
 
         // Start is called before the first frame update
-        void Start() {
-            Time.timeScale = 1f;
-            Time.fixedDeltaTime = 0.02f;
-        }
 
         public void AddScore(int amount) {
             playerScore += amount;

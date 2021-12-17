@@ -31,7 +31,7 @@ namespace GA.Pyramid_dash {
         // Update is called once per frame
         void FixedUpdate() {
             moveTimer += Time.deltaTime;
-            if (moveTimer >= 0.6f) {
+            if (moveTimer >= 0.5f) {
                 Move();
                 moveTimer = 0f;
             }

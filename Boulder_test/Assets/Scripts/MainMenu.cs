@@ -5,10 +5,8 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using GA.Pyramid_dash;
 
-namespace GA.Pyramid_dash
-{
-    public class MainMenu : MonoBehaviour
-    {
+namespace GA.Pyramid_dash {
+    public class MainMenu : MonoBehaviour {
         [SerializeField]
         GameManager gm;
 
@@ -21,8 +19,29 @@ namespace GA.Pyramid_dash
         [SerializeField]
         Toggle diggingSfx;
 
+        [SerializeField]
+        LevelLoader loader;
+
+        AudioSource audi;
+
+        public AudioClip button_Sfx;
+
         void Start() {
-            effectSlider.value = PlayerPrefs.GetFloat("EffectVolume");
+            Time.timeScale = 1f;
+            audi = GetComponent<AudioSource>();
+            audi.volume = PlayerPrefs.GetFloat("EffectVolume");
+            if (PlayerPrefs.HasKey("EffectVolume")) {
+                effectSlider.value = PlayerPrefs.GetFloat("EffectVolume");
+            } else {
+                effectSlider.value = 0.5f;
+            }
+
+            if (PlayerPrefs.HasKey("MusicVolume")) {
+                effectSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+            } else {
+                musicSlider.value = 0.5f;
+            }
+            
             musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
         }
 
@@ -39,7 +58,9 @@ namespace GA.Pyramid_dash
         }
 
         public void LevelSelect(string level_Name) {
-            SceneManager.LoadScene(level_Name);
+            audi.PlayOneShot(button_Sfx);
+            StartCoroutine(loader.LoadLevel(level_Name, 1f));
+            //SceneManager.LoadScene(level_Name);
         }
 
         public void ChangeEffectVolume() {
